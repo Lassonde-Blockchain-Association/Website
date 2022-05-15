@@ -6,7 +6,7 @@ import VisionSection from "../components/VisionSection";
 // import { homeObjOne, homeObjThree } from "../components/InfoSection/Data";
 // , homeObjTwo
 // import Projects from "../components/Terms";
-// import Projects from "../components/TeamSection";
+import Projects from "../components/TeamSection";
 // import Footer from "../components/Footer";
 // import { Router } from 'react-router-dom';
 
