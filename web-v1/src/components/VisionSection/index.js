@@ -1,8 +1,8 @@
 import React from "react";
 
 
-import { VisionContainer, VisionContent, VisionH1, VisionH2, VisionP, VisionRow, Column1, timelineELements } from "./VisionElements";
-import { Timeline } from "./timeline.js"
+import { VisionContainer, VisionContent, VisionH1, VisionH2, VisionP, VisionRow, Column1} from "./VisionElements";
+import Timeline from "./timeline"
 
 const VisionSection = () => {
   return (

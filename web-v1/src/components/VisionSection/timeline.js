@@ -1,8 +1,8 @@
-import './App.css';
-import { ReactComponent as WorkIcon } from "../images/work.svg";
-import { ReactComponent as SchoolIcon } from "../images/school.svg";
+import '../../App.css';
+import { ReactComponent as WorkIcon } from "../../images/work.svg";
+import { ReactComponent as SchoolIcon } from "../../images/school.svg";
 
-import timelineElements from "./timelineElements";
+import timelineElements from "./TimelineElements";
 
 import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
 
