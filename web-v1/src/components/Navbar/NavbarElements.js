@@ -3,6 +3,12 @@ import { NavLink as Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 
 // TODO:
+// 1. Less space btwn navlinks
+// 2. Navlinks squeeze to the middle, keep LBC logo on the left
+// 3. Change LBC font style
+// 4. Change Navlink font style
+// 5. Make 'LBC Home' button 
+
 export const Nav = styled.nav`
     background: #000;
     height: 90px;
