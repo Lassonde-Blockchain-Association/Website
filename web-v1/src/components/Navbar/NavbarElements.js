@@ -10,7 +10,8 @@ import { FaBars } from "react-icons/fa";
 // 5. Make 'LBC Home' button 
 
 export const Nav = styled.nav`
-    background: #000;
+    background-color: #F0FFF0;
+    transition: background-color 200ms linear;
     height: 90px;
     display: flex;
     justify-content: space-between;
@@ -19,7 +20,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavLink = styled(Link)`
-    color: #fff;
+    color: #000;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -112,9 +113,8 @@ export const NavBtnLink = styled(Link)`
 // export const NavBtn = styled.nav``;
 // export const NavBtnLink = styled(Link)``;
 export const NavH1 = styled.h2`
-    color: white;
-    margin-left: -23%;
+    color: #000;
     font-size: 30px;
-
+    font-family: 'Bold-700';
     /* font-size: 30px; */
 `;
