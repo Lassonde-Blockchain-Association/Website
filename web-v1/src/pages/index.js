@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 // import Sidebar from "../components/Sidebar";
 // import Navbar from "../components/Navbar";
-// import InfoSection from "../components/HomeSection";
-import VisionSection from "../components/VisionSection";
+import HomeSection from "../components/HomeSection";
+// import VisionSection from "../components/VisionSection";
 // import { homeObjOne, homeObjThree } from "../components/InfoSection/Data";
 // , homeObjTwo
 // import Projects from "../components/Terms";
@@ -20,9 +20,9 @@ const Home = () => {
   return (
     <>
       {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
-      {/* <Navbar toggle={toggle} />
-      <HomeSection /> */}
-      <VisionSection />
+      {/* <Navbar toggle={toggle} /> */}
+      <HomeSection />
+      {/* <VisionSection /> */}
       {/* <Terms />
       <InfoSection {...homeObjTwo} />
       <TeamSection/>
