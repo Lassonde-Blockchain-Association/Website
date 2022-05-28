@@ -45,7 +45,9 @@ const TeamSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </TeamElements.TeamMemberDescription>
       </TeamElements.TeamMemberContainer>
+    </TeamElements.TeamContainer>
 
+    <TeamElements.TeamContainer>  
        {/* 
       Fourth team member information
       */}
@@ -63,6 +65,9 @@ const TeamSection = () => {
         <TeamElements.TeamMemberPhoto  src={img5}/>
         <TeamElements.TeamMemberDescription> 
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </TeamElements.TeamMemberDescription>
       </TeamElements.TeamMemberContainer>
 
@@ -76,7 +81,7 @@ const TeamSection = () => {
         </TeamElements.TeamMemberDescription>
       </TeamElements.TeamMemberContainer>
 
-      </TeamElements.TeamContainer>
+    </TeamElements.TeamContainer>
       
     </>
   );

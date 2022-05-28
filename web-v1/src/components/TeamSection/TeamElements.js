@@ -16,8 +16,8 @@ export const TeamMemberPhoto = styled.img`
     vertical-align: top;
     
     @media only screen and (max-width: 600px){
-        height: 300px;
-        width: 300px;
+        height: 150px;
+        width: 150px;
     }
 `
 
@@ -27,6 +27,13 @@ export const TeamContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin: 10px;
+    @media only screen and (max-width: 600px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
 `
 
 export const TeamMemberContainer = styled.div`
@@ -40,9 +47,9 @@ export const TeamMemberContainer = styled.div`
     background-color: #f5f5f5;
     width: 300px;
     height: 300px;
-    &:hover {
-        background-color: #e6e6e6;
-    }
+    // &:hover {
+    //     background-color: #e6e6e6;
+    // }
 `
 
 export const TeamMemberDescription = styled.p`
