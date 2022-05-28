@@ -21,11 +21,15 @@ export const ValueWrapper = styled.div`
 `;
 
 export const ValueRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    // display: flex;
+    // flex-direction: column;
+    // flex-wrap: wrap;
+    // justify-content: center;
+    // align-items: center;
+
     // grid-auto-columns: minmax(auto, lfr);
     // align-items: center;
     // grid-template-areas: 'col1 col2 col3 col4';
@@ -35,7 +39,10 @@ export const ValueRow = styled.div`
 `;
 
 export const Column1 = styled.div`
-    display: flex;
+    // display: flex;
     flex-direction: column;
     // max-width: 500px;
+    margin: 20px;
+    // width: 200px;
+    border: 1px solid black;
 `;
