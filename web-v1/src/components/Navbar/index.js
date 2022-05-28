@@ -11,7 +11,7 @@ import {
   NavItem,
   NavBtnLink,
   NavBtn,
-} from "./NavbarElement";
+} from "./NavbarElements";
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
