@@ -10,6 +10,15 @@ export const VisionH2 = styled.h2``;
 
 export const VisionP = styled.p``;
 
+export const ValueWrapper = styled.div`
+    // display: grid;
+    // max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 100px;
+    justify-content: center;
+`;
+
 export const VisionRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, lfr);

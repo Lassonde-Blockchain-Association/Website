@@ -27,7 +27,7 @@ const Home = () => {
       <VisionSection />
       {/* <Terms /> */}
       {/* <InfoSection {...homeObjTwo} /> */}
-      {/* <TeamSection /> */}
+      <TeamSection />
       {/* <Footer /> */}
     </>
   );
