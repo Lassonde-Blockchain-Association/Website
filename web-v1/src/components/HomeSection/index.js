@@ -22,7 +22,7 @@ const markerIcon = new L.Icon({
 
 const HomeSection = () => {
   const [center, setCenter] = useState({ lat: 22.302711, lng: 114.177216 });
-  const ZOOM_LEVEL = 7;
+  const ZOOM_LEVEL = 9;
   const mapRef = useRef();
 
   React.useEffect(() => {
