@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const VisionContainer = styled.div``;
+export const VisionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+`;
 
 export const VisionH1 = styled.h1``;
 
@@ -12,8 +16,6 @@ export const VisionP = styled.p`
 `;
 
 export const ValueWrapper = styled.div`
-  // display: grid;
-  // max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 100px;
@@ -21,28 +23,18 @@ export const ValueWrapper = styled.div`
 `;
 
 export const ValueRow = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  // display: flex;
-  // flex-direction: column;
-  // flex-wrap: wrap;
-  // justify-content: center;
-  // align-items: center;
-
-  // grid-auto-columns: minmax(auto, lfr);
-  // align-items: center;
-  // grid-template-areas: 'col1 col2 col3 col4';
-  @media only screen and (max-width: 600px) {
-    flex-direction: column;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 10px;
+    @media only screen and (max-width: 600px){
+        flex-direction: column;
+    }
 `;
 
 export const Column1 = styled.div`
-  // display: flex;
   flex-direction: column;
-  // max-width: 500px;
   margin: 20px;
-  // width: 200px;
-  border: 1px solid black;
+  width: 400px;
+  height: 150px;
 `;
