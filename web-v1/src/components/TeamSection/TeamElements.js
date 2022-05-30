@@ -6,6 +6,12 @@ TODO:
 2. When the screen is size equals to mobile, the team members are displayed vertically
 transition css 
 */
+
+export const Team = styled.div`
+  margin: 40px 100px;
+  height: 100vh;
+`;
+
 export const TeamMemberPhoto = styled.img`
   height: 150px;
   width: 150px;
@@ -26,7 +32,7 @@ export const TeamContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 80px 10px;
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const VisionContainer = styled.div`
+  /* height: 1000px; */
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 20px 100px;
 `;
 
 export const VisionH1 = styled.h1``;
@@ -23,13 +25,13 @@ export const ValueWrapper = styled.div`
 `;
 
 export const ValueRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 10px;
-    @media only screen and (max-width: 600px){
-        flex-direction: column;
-    }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
 `;
 
 export const Column1 = styled.div`
