@@ -22,7 +22,7 @@ const markerIcon = new L.Icon({
 
 const HomeSection = () => {
   const [center, setCenter] = useState({ lat: 22.302711, lng: 114.177216 });
-  const ZOOM_LEVEL = 9;
+  const ZOOM_LEVEL = 5;
   const mapRef = useRef();
 
   React.useEffect(() => {
@@ -58,7 +58,7 @@ const HomeSection = () => {
             />
             <Marker position={center} icon={markerIcon}>
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                lat: <br /> lng:
               </Popup>
             </Marker>
           </MapContainer>

@@ -12,7 +12,7 @@ import img6 from "./images/img6.jpeg";
 const TeamSection = () => {
   return (
     <>
-      <TeamElements.Team>
+      <TeamElements.Team id="team">
         <h1>Our Team</h1>
         <TeamElements.TeamContainer>
           {/* 

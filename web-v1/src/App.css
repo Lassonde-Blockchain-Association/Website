@@ -52,7 +52,8 @@
 }
 
 .date {
-  color: rgb(201, 201, 255);
+  /* color: rgb(201, 201, 255); */
+  color: black;
 }
 
 #description {
@@ -83,7 +84,9 @@
 }
 
 body {
-  background-color: #fff3c2;
+  /* background-color: aqua; */
+  /* background-color: #CACD73; */
+  background-color: #E6F0ED;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: rgb(53, 53, 53);

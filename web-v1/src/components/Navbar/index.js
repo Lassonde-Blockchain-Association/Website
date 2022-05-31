@@ -1,41 +1,92 @@
 //rafce
 import React, { useState, useEffect } from "react";
-// import { 
+// import {
 import {
   Nav,
-  NavH1,
+  NavLogo,
   NavLink,
   NavBtnLink,
   NavBtn,
-} from './NavbarElements';
-// import { animateScroll as scroll } from "react-scroll";
+  NavMenu,
+} from "./NavbarElements";
+
+import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
+  const [click, setClick] = useState(false);
+  // const [button, setButton] = useState(true);
+  const [scrollNav, setScrollNav] = useState(false);
+
+  // const handleClick = () => setClick(!click);
+  const updateNav = () => {
+    console.log(window.scrollY);
+    if (window.scrollY >= 300) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", updateNav);
+  }, []);
+
+  // const showButton = () => {
+  //   if (window, innerWidth <= 960) {
+  //     setButton(false);
+  //   } else {
+  //     setButton(true);
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   showButton();
+  // }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
-      <>
-      <Nav>
-          {/* <NavbarContainer> */}
-            {/* H1 is our header of navbar */}
-            <NavH1 to="/">
-            LBC
-            </NavH1>
-            <NavLink to="/about" activeStyle>
+    <>
+      <Nav scrollNav={scrollNav}>
+        {/* <NavbarContainer> */}
+        {/* H1 is our header of navbar */}
+        <NavLogo to="/" onClick={toggleHome}>
+          LBC
+        </NavLogo>
+        <NavMenu>
+          <NavLink
+            to="vision"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-65}
+          >
             Vision
           </NavLink>
-          <NavLink to="/services" activeStyle>
-            Terms
-          </NavLink>
-          <NavLink to="/contact-us" activeStyle>
+          {/* <NavLink to="/services" activeStyle>
+            Terms */}
+          {/* </NavLink> */}
+          <NavLink
+            to="team"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-85}
+          >
             Team
           </NavLink>
-          <NavLink to="/sign-up" activeStyle>
+        </NavMenu>
+        {/* <NavLink to="/sign-up" activeStyle>
             Contents
-          </NavLink>
-          
-          {/* </NavbarContainer> */}
-          <NavBtn>
-          <NavBtnLink to='/contactus'>Contact Us</NavBtnLink>
-          </NavBtn>
+          </NavLink> */}
+
+        {/* </NavbarContainer> */}
+        <NavBtn>
+          <NavBtnLink to="/contactus">Contact Us</NavBtnLink>
+        </NavBtn>
       </Nav>
     </>
   );

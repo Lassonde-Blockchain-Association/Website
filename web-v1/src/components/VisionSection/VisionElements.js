@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const VisionContainer = styled.div`
-  /* height: 1000px; */
+  /* height: 100vh; */
   /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
-  margin: 20px 100px;
+  /* margin: 80px; */
+  margin: -80px 200px 0 200px;
 `;
 
 export const VisionH1 = styled.h1``;

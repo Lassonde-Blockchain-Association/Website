@@ -8,7 +8,8 @@ transition css
 */
 
 export const Team = styled.div`
-  margin: 40px 100px;
+  /* margin: 40px 100px; */
+  margin: 80px 200px 0 200px;
   height: 100vh;
 `;
 
