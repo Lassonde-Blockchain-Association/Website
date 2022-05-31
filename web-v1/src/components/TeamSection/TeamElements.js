@@ -8,6 +8,8 @@ transition css
 */
 
 export const Team = styled.div`
+  /* font-family: "Spline Sans Mono", monospace;
+  letter-spacing: -1px; */
   /* margin: 40px 100px; */
   margin: 80px 200px 0 200px;
   height: 100vh;

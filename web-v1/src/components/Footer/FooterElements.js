@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
+  font-family: "Spline Sans Mono", monospace;
+  /* letter-spacing: -1px; */
   background-color: #101522;
 `;
 export const FooterWrap = styled.div`
@@ -36,7 +38,7 @@ export const SocialLogo = styled(Link)`
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 35px;
   display: flex;
   align-items: center;
   margin-bottom: 16px;

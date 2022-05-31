@@ -4,6 +4,8 @@ import { NavLink as Link } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
+  font-family: "Spline Sans Mono", monospace;
+  letter-spacing: -1px;
   top: 0;
   position: sticky;
   display: flex;
@@ -27,7 +29,6 @@ export const NavLogo = styled(Link)`
   /* color: ${({ scrollNav }) => (scrollNav ? "transparent" : "black")}; */
   color: black;
   font-size: 35px;
-  font-family: "Spline Sans Mono", monospace;
   align-items: center;
   text-decoration: none;
   font-weight: bold;
@@ -75,6 +76,9 @@ export const NavMenu = styled.div`
 
 export const NavLink = styled(LinkS)`
   /* color: ${({ scrollNav }) => (scrollNav ? "white" : "black")}; */
+  font-size: 18px;
+  /* font-weight: bold; */
+
   color: black;
   display: flex;
   align-items: center;

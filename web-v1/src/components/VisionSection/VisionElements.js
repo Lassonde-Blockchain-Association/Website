@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const VisionContainer = styled.div`
   /* height: 100vh; */
   /* border: 1px solid black; */
+  /* font-family: "Spline Sans Mono", monospace; */
+  /* letter-spacing: -1px; */
+
   display: flex;
   flex-direction: column;
   /* margin: 80px; */
