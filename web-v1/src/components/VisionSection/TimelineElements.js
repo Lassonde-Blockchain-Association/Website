@@ -4,39 +4,59 @@ let timelineElements = [
     title: "Team formation",
     location: "()",
     description:
-      "LBC was formed by Samson, who was soon joined by students from YorkU and other universities.",
-    buttonText: "()",
-    date: "Apr 2022",
-    icon: "work",
-  },
-  {
-    id: 2,
-    title: "Web 2.0 club website",
-    location: "()",
-    description:
-      "We built this website from scratch with the hopes of transforming it into a web 3.0 one.",
+      "Lassonde Blockchain was founded with the mission of future tech, collaborated by students from YorkU and other universities.",
     buttonText: "()",
     date: "May 2022",
     icon: "work",
   },
   {
-    id: 3,
-    title: "Club launch",
+    id: 2,
+    title: "Website Development",
     location: "()",
     description:
-      "We plan to register LBC as at YorkU and hope that you will join us to learn about blockchain and how it will shape our future.",
+      "We built this website from scratch as a brief introduction about Lassonde Blockchain and team members. We are going to transform it into a web 3.0 by using blockchain technology.",
     buttonText: "()",
-    date: "Sep 2022",
+    date: "May - Jun 2022",
+    icon: "work",
+  },
+  {
+    id: 3,
+    title: "Club registration + launch",
+    location: "()",
+    description:
+      "We have registered LBC at YorkU. We hope that you will join us to learn about blockchain and how it will shape our future.",
+    buttonText: "()",
+    date: "Jun - Aug 2022",
     icon: "work",
   },
   {
     id: 4,
-    title: "Web 3.0 club website",
+    title: "NFT Project",
     location: "()",
     description:
-      "Powered by blockchain, our web3 website would give our viewers control over their data.",
+      "Learning about blockchain ownership.",
     buttonText: "()",
-    date: "Fall 2022",
+    date: "Coming Soon in Fall 2022",
+    icon: "school",
+  },
+  {
+    id: 5,
+    title: "NFT/blockchain-related data visualisation/analyst tool",
+    location: "()",
+    description:
+      "Using data to understand the NFT market ",
+    buttonText: "()",
+    date: "Coming Soon in Winter 2023",
+    icon: "school",
+  },
+  {
+    id: 6,
+    title: "Buying a LAND",
+    location: "()",
+    description:
+      "Potentially app/game development, learning more about blockchain ownership.",
+    buttonText: "()",
+    date: "Coming Soon in Summer 2023",
     icon: "school",
   },
 ];
