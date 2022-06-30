@@ -69,6 +69,16 @@ const Navbar = ({ toggle }) => {
             Terms */}
           {/* </NavLink> */}
           <NavLink
+            to="timeline"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-75}
+          >
+            Timeline
+          </NavLink>
+          <NavLink
             to="team"
             smooth={true}
             duration={500}
