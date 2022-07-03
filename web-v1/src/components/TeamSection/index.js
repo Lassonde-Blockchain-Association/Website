@@ -6,7 +6,6 @@ import img2 from "./images/img2.webp";
 import img3 from "./images/img3.jpeg";
 import img4 from "./images/img4.png";
 import img5 from "./images/img5.webp";
-import img6 from "./images/img6.jpeg";
 
 const TeamSection = () => {
   return (
