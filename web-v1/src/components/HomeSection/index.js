@@ -39,7 +39,7 @@ const HomeSection = () => {
 
   return (
     <>
-      <Map>
+      <Map id = "home">
         <MapBox>
           <MapH1>Welcome to LBD BlockMap</MapH1>
           <MapContainer

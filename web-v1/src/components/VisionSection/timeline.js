@@ -14,7 +14,7 @@ function Timeline() {
 
   return (
     <div>
-      <h1>Timeline</h1>
+      <h1  id = "timeline">Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
@@ -29,13 +29,13 @@ function Timeline() {
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
               <h3 className="vertical-timeline-element-title">{element.title}</h3>
-              <h5 className="vertical-timeline-element-subtitle">{element.location}</h5>
+              {/* <h5 className="vertical-timeline-element-subtitle">{element.location}</h5> */}
               <p id="description">{element.description}</p>
-              {showButton && (<a
+              {/* {showButton && (<a
                 className={`button ${isWorkIcon ? "workButton" : "schoolButton"}`}
                 href="/">
                   {element.buttonText}
-                </a>)}
+                </a>)} */}
             </VerticalTimelineElement>
           );
         })}

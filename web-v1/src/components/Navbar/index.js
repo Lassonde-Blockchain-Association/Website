@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
   // const handleClick = () => setClick(!click);
   const updateNav = () => {
     console.log(window.scrollY);
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 70) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -55,6 +55,16 @@ const Navbar = ({ toggle }) => {
           LBC
         </NavLogo>
         <NavMenu>
+        <NavLink
+            to="home"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-75}
+          >
+            Home
+          </NavLink>
           <NavLink
             to="vision"
             smooth={true}
@@ -68,6 +78,16 @@ const Navbar = ({ toggle }) => {
           {/* <NavLink to="/services" activeStyle>
             Terms */}
           {/* </NavLink> */}
+          <NavLink
+            to="timeline"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-75}
+          >
+            Timeline
+          </NavLink>
           <NavLink
             to="team"
             smooth={true}
