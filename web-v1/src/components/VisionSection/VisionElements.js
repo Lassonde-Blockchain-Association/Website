@@ -29,6 +29,7 @@ export const ValueWrapper = styled.div`
 `;
 
 export const ValueRow = styled.div`
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

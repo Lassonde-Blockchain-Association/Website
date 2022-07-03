@@ -1,6 +1,5 @@
 import React from "react";
 import * as TeamElements from "./TeamElements";
-import Team from "./TeamElements";
 
 import img1 from "./images/img1.webp";
 import img2 from "./images/img2.webp";
