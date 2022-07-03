@@ -16,28 +16,21 @@ const VisionSection = () => {
       <VisionContainer id="vision">
         <VisionH1>Vision</VisionH1>
         <VisionP>
-          (Vision statement and explanation) Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing
-          elit.
+          By asking questions and considering others' feedback, we hope to learn
+          and enjoy our journey together.
         </VisionP>
 
         <ValueRow>
           <Column1>
             <VisionH2>Curiosity</VisionH2>
-            <VisionP>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
-            </VisionP>
+            <VisionP>Asking questions, exploring.</VisionP>
           </Column1>
 
           <Column1>
             <VisionH2>Communication</VisionH2>
             <VisionP>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
+              Being transparent in how we lead, providing constant communication
+              and feedback for each other.
             </VisionP>
           </Column1>
         </ValueRow>
@@ -45,19 +38,14 @@ const VisionSection = () => {
         <ValueRow>
           <Column1>
             <VisionH2>Execution</VisionH2>
-            <VisionP>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
-            </VisionP>
+            <VisionP>Striving to create products from those ideas.</VisionP>
           </Column1>
 
           <Column1>
             <VisionH2>Reflection</VisionH2>
             <VisionP>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-              dolor sit amet, consectetur adipiscing elit.
+              Admitting all feedback, thinking thoroughly about what we have
+              done and brainstorming what we can do better in the future.
             </VisionP>
           </Column1>
         </ValueRow>

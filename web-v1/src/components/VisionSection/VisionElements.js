@@ -8,8 +8,7 @@ export const VisionContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  /* margin: 80px; */
-  margin: -80px 200px 0 200px;
+  margin: 10px 200px 0 200px;
 `;
 
 export const VisionH1 = styled.h1``;
