@@ -4,12 +4,13 @@ import PropTypes from "prop-types";
 import L from "leaflet"; 
 import "leaflet.polyline.snakeanim/L.Polyline.SnakeAnim.js";
 import markerIcon from "./constants";
-import { MapContainer } from "react-leaflet";
+import { useMap } from "react-leaflet";
 // import { useLeafletMap } from "use-leaflet"
 
 
 const SnakeAnim = ({ startAnimation }) => {
-    // const { map } = useLeafletMap();
+    const { map } = useMap();
+    // const map = L.Map;
 
   useEffect(() => {
     if (!startAnimation) return;
@@ -35,11 +36,11 @@ const SnakeAnim = ({ startAnimation }) => {
       L.polyline([LSE, Vancouver]),
       L.marker(Vancouver, { markerIcon }),
     ], { snakingPause: 200 });
-    L.map.fitBounds(route.getBounds());
+    map.mapfitBounds(route.getBounds());
 
-    L.map.addLayer(route);
+    map.addLayer(route);
 
-    route.addTo(L.map).snakeIn();
+    route.addTo(map).snakeIn();
 
     route.on("snakestart snake snakeend", (ev) => {
       console.log(ev.type);
