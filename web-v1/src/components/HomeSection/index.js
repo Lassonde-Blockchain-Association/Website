@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import osm from "./osMaptiler";
 // // import "leaflet/dist/leaflet.css";
-import { Map, MapBox, MapH1 } from "./HomeElements";
+import { Map, MapBox, MapH1, MapP } from "./HomeElements";
 import L from "leaflet";
 import "../../";
 
@@ -72,7 +72,7 @@ const HomeSection = () => {
   // });
 
   // useState({ lat: 43.77186, lng: -79.506731 });
-  const ZOOM_LEVEL = 5;
+  const ZOOM_LEVEL = 7;
   const ZOOM_MIN = 2.5;
   const mapRef = useRef();
 
@@ -90,7 +90,11 @@ const HomeSection = () => {
     <>
       <Map id="home">
         <MapBox>
-          <MapH1> BlockMap</MapH1>
+          <MapH1>Lassonde Blockchain</MapH1>
+          <MapP>
+            A student community love to share and learn the newest tech in
+            blockchain, web3.0, matervrse, and more.
+          </MapP>
           <MapContainer
             id="map"
             center={Vancouver}
