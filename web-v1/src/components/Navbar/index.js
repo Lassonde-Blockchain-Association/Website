@@ -55,13 +55,15 @@ const Navbar = ({ toggle }) => {
           LBC
         </NavLogo>
         <NavMenu>
-        <NavLink
-            to="home"
+          <NavLink
+            // to="home"
             smooth={true}
             duration={500}
             spy={true}
-            exact="true"
-            offset={-75}
+            // exact="true"
+            // offset={-75}
+            to="/"
+            onClick={toggleHome}
           >
             Home
           </NavLink>

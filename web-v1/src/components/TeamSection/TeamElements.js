@@ -10,8 +10,8 @@ transition css
 export const Team = styled.div`
   /* font-family: "Spline Sans Mono", monospace;
   letter-spacing: -1px; */
-  margin: 80px 200px 0 200px;
-  // height: 100vh;
+  margin: 100px 200px 0 200px;
+  height: 100vh;
 `;
 
 export const TeamMemberPhoto = styled.img`
@@ -32,12 +32,16 @@ export const TeamMemberPhoto = styled.img`
   }
 `;
 
+export const TeamBigContainer = styled.div`
+  margin: 60px;
+`;
+
 export const TeamContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 20px 10px;
+  margin-top: 30px;
   @media only screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
