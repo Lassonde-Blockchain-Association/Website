@@ -11,3 +11,7 @@ export const TimelineBody = styled.body`
 export const TimelineH3 = styled.h3`
   padding-top: 0.25em;
 `;
+
+export const TimelineH1 = styled.h1`
+  margin: 10px 200px 0 200px;
+`;
