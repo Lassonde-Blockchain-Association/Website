@@ -55,13 +55,15 @@ const Navbar = ({ toggle }) => {
           LBC
         </NavLogo>
         <NavMenu>
-        <NavLink
-            to="home"
+          <NavLink
+            // to="home"
             smooth={true}
             duration={500}
             spy={true}
-            exact="true"
-            offset={-75}
+            // exact="true"
+            // offset={-75}
+            to="/"
+            onClick={toggleHome}
           >
             Home
           </NavLink>
@@ -71,7 +73,7 @@ const Navbar = ({ toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-65}
+            offset={-200}
           >
             Vision
           </NavLink>
@@ -84,7 +86,7 @@ const Navbar = ({ toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-75}
+            offset={-100}
           >
             Timeline
           </NavLink>
@@ -94,7 +96,7 @@ const Navbar = ({ toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-85}
+            offset={-100}
           >
             Team
           </NavLink>

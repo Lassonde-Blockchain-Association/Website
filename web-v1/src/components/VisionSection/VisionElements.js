@@ -1,17 +1,23 @@
 import styled from "styled-components";
 
 export const VisionContainer = styled.div`
-  /* height: 100vh; */
+  height: 80vh;
   /* border: 1px solid black; */
   /* font-family: "Spline Sans Mono", monospace; */
   /* letter-spacing: -1px; */
 
   display: flex;
   flex-direction: column;
-  margin: 10px 200px 0 200px;
+  /* margin: 20px 200px 0 200px; */
 `;
 
-export const VisionH1 = styled.h1``;
+export const VisionH1 = styled.h1`
+  text-align: center;
+`;
+
+export const VisionStatement = styled.p`
+  text-align: center;
+`;
 
 export const VisionH2 = styled.h2``;
 

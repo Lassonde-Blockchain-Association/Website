@@ -3,6 +3,7 @@ import React from "react";
 import {
   VisionContainer,
   VisionH1,
+  VisionStatement,
   VisionH2,
   VisionP,
   ValueRow,
@@ -15,10 +16,10 @@ const VisionSection = () => {
     <>
       <VisionContainer id="vision">
         <VisionH1>Vision</VisionH1>
-        <VisionP>
+        <VisionStatement>
           By asking questions and considering others' feedback, we hope to learn
           and enjoy our journey together.
-        </VisionP>
+        </VisionStatement>
 
         <ValueRow>
           <Column1>
@@ -49,9 +50,9 @@ const VisionSection = () => {
             </VisionP>
           </Column1>
         </ValueRow>
-
-        <Timeline />
       </VisionContainer>
+
+      <Timeline />
     </>
   );
 };

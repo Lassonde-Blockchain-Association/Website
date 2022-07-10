@@ -10,6 +10,11 @@ export const MapBox = styled.div`
 `;
 export const MapH1 = styled.h1`
   font-size: 30px;
+  text-align: center;
+`;
+export const MapP = styled.p`
+  font-size: 16px;
+  text-align: center;
 `;
 
 // export const MapContainer = styled.div`

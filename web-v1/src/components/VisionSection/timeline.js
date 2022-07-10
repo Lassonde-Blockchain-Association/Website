@@ -1,10 +1,14 @@
-import '../../App.css';
+import "../../App.css";
 import { ReactComponent as WorkIcon } from "../../images/work.svg";
 import { ReactComponent as SchoolIcon } from "../../images/school.svg";
 
 import timelineElements from "./TimelineElements";
+import { TimelineH1 } from "./TimelineComponents";
 
-import {VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -14,11 +18,14 @@ function Timeline() {
 
   return (
     <div>
-      <h1  id = "timeline">Timeline</h1>
+      <TimelineH1 id="timeline">Timeline</TimelineH1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
-          let showButton = element.buttonText !== undefined && element.buttonText !== null && element.buttonText !== "";
+          let showButton =
+            element.buttonText !== undefined &&
+            element.buttonText !== null &&
+            element.buttonText !== "";
 
           return (
             <VerticalTimelineElement
@@ -28,7 +35,9 @@ function Timeline() {
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >
-              <h3 className="vertical-timeline-element-title">{element.title}</h3>
+              <h3 className="vertical-timeline-element-title">
+                {element.title}
+              </h3>
               {/* <h5 className="vertical-timeline-element-subtitle">{element.location}</h5> */}
               <p id="description">{element.description}</p>
               {/* {showButton && (<a
