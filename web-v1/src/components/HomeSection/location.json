@@ -1,0 +1,44 @@
+[
+    {
+      "location": "Lassonde School of Engineering",
+      "coordinates": [
+        43.77186,
+        -79.506731
+      ]
+    },
+    {
+      "location": "Vancouver",
+      "coordinates": [
+        49.246292,
+        -123.116226
+      ]
+    },
+    {
+      "location": "Vietnam",
+      "coordinates": [
+        14.0583,
+        108.2772
+      ]
+    },
+    {
+      "location": "Seoul",
+      "coordinates": [
+        37.5326,
+        127.024612
+      ]
+    },
+    {
+      "location": "Hong Kong",
+      "coordinates": [
+        22.302711,
+        114.177216
+      ]
+    },
+    {
+      "location": "Markham",
+      "coordinates": [
+        43.856098,
+        -79.337021
+      ]
+    }
+]

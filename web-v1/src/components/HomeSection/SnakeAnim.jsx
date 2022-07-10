@@ -5,13 +5,19 @@ import L from "leaflet";
 import "leaflet.polyline.snakeanim/L.Polyline.SnakeAnim.js";
 import markerIcon from "./constants";
 import { useMap } from "react-leaflet";
+import osm from "./osMaptiler";
+import "./location.json";
+
 // import { useLeafletMap } from "use-leaflet"
 
 
 const SnakeAnim = ({ startAnimation }) => {
-    const { map } = useMap();
-    // const map = L.Map;
+    // const { map } = useMap();
+    const map = L.map('mapid',  {
+      zoomControl: false
+    }).setView([49.246292, -123.116226], 7);
 
+    L.tileLayer('')
   useEffect(() => {
     if (!startAnimation) return;
     const LSE = [43.77186, -79.506731];
@@ -19,17 +25,6 @@ const SnakeAnim = ({ startAnimation }) => {
     const Vietnam = [14.0583, 108.2772];
     const Seoul = [37.5326, 127.024612];
     const Markham = [43.856098, -79.337021];
-    // const locations = [
-    //   {
-    //     name: "Lassonde School of Engineering",
-    //     position: [43.77186, -79.506731],
-    //   },
-    //   { name: "Vancouver", position: [49.246292, -123.116226] },
-    //   { name: "Vietnam", position: [14.0583, 108.2772] },
-    //   { name: "Seoul", position: [37.5326, 127.024612] },
-    //   { name: "Hong Kong", position: [22.302711, 114.177216] },
-    //   { name: "Markham", position: [43.856098, -79.337021] },
-    // ];
 
     const route = L.featureGroup([
       L.marker(LSE, { markerIcon }),
