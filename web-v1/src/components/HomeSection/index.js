@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import osm from "./osMaptiler";
 // // import "leaflet/dist/leaflet.css";
 import { Map, MapBox, MapH1, MapP } from "./HomeElements";
-import L from "leaflet";
+import L, { PolyUtil } from "leaflet";
 import "../../";
 
 // import * as React from "react";
@@ -14,14 +14,15 @@ import {
   Polyline,
   FeatureGroup,
   useMap,
+  Polygon,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./index.css";
 
-import "leaflet.polyline.snakeanim";
-import SnakeAnim from "./SnakeAnim";
+// import "leaflet.polyline.snakeanim";
+// import SnakeAnim from "./SnakeAnim";
 import markerIcon from "./constants";
-import Data from "./location.json";
+import Data from "./location";
 
 // delete L.Icon.Default.prototype._getIconUrl;
 
@@ -41,6 +42,23 @@ const HomeSection = () => {
   const ZOOM_LEVEL = 7;
   const ZOOM_MIN = 2.5;
   const mapRef = useRef();
+  const polygon = [
+    [37.5326, 127.024612],
+    [49.246292, -123.116226],
+    [14.0583, 108.2772],
+  ];
+  const polyline = [
+    [
+      [43.77186, -79.506731],
+
+      [37.5326, 127.024612],
+    ],
+    [
+      [43.77186, -79.506731],
+      [22.302711, 114.177216],
+    ],
+    // [43.856098, -79.337021],
+  ];
 
   return (
     <>
@@ -69,9 +87,18 @@ const HomeSection = () => {
               url={osm.maptiler.url}
               // noWrap={true} //this is the crucial line
             />
+            <Polygon
+              positions={polygon}
+              color="#004080"
+              smoothFactor="2"
+              noClip={true}
+            />
+            <Polyline positions={polyline} color="yellow" />
             {/* <SnakeAnim startAnimation={startAnimation} /> */}
             <FeatureGroup>
-              {Data.map((display) => (
+              {Data?.map((display) => (
+                // <Polyline positions={polyline} color="red" />
+
                 <Marker
                   key={display.location}
                   position={[display.coordinates[0], display.coordinates[1]]}
@@ -82,12 +109,11 @@ const HomeSection = () => {
                     {display.coordinates}
                   </Popup>
                 </Marker>
-                // <Polyline positions={display.coordinates} color="red" />
               ))}
-            </FeatureGroup>
-            {/* {Data.map((display) => (
+              {/* {Data.map((display) => (
                 <Polyline positions={display.coordinates} color="red" />
               ))} */}
+            </FeatureGroup>
           </MapContainer>
           {/* <button onClick={startSnake}>Snake it!</button> */}
         </MapBox>
