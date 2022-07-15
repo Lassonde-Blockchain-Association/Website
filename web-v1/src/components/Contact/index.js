@@ -11,7 +11,18 @@ import {
   Column1,
   Column2,
   TextWrapper,
+  Circle
 } from "./ContactElements";
+
+import {
+  FaMailBulk,
+  FaGithub,
+  FaLinkedin,
+  // FaDiscord,
+  // FaYoutube,
+  // FaFacebook,
+  // FaInstagram
+} from "react-icons/fa"
 
 const Contact = ({ imgStart, img }) => {
   return (
@@ -26,25 +37,28 @@ const Contact = ({ imgStart, img }) => {
                 <ContactH1>General Inquiries</ContactH1>
 
                 <Text>
-                  Lassonde Blockchain’s mission to create a community of
+                  Lassonde Blockchain’s mission is to create a community of
                   blockchain innovators at York University. Feel free to reach
                   out to us by email below:
                 </Text>
 
-                <ContactLink>Email: Lassondeblockchain@gmail.com</ContactLink>
+                <ContactLink>     <FaMailBulk />     lassondeblockchain@gmail.com</ContactLink>
 
                 <ContactH1>For Code/Networking Geeks</ContactH1>
                 <Text>
                   In addition, feel free to explore our open-source projects on
                   GitHub and see our organization’s LinkedIn page below:
                 </Text>
-                <ContactLink>Github </ContactLink>
-                <ContactLink>LinkedIn</ContactLink>
+                <ContactLink><FaGithub />     Lassonde-Blockchain-Club</ContactLink>
+                <ContactLink><FaLinkedin />     Lassonde Blockchain Club</ContactLink>
               </TextWrapper>
             </Column1>
             {/* right side */}
             {/* find a img/drawing */}
             <Column2>
+              <Circle>
+                <Text>Circle Text</Text>
+              </Circle>
               <a>
                 <ImgWrap>
                   <Img src={img} />

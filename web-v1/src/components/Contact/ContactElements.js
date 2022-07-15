@@ -77,3 +77,11 @@ export const Img = styled.img`
   transition: all 0.5s ease-in-out;
   border-radius: 10px;
 `;
+
+export const Circle = styled.div`
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+`;
