@@ -6,7 +6,7 @@ import "leaflet.polyline.snakeanim/L.Polyline.SnakeAnim.js";
 import markerIcon from "./constants";
 import { useMap } from "react-leaflet";
 import osm from "./osMaptiler";
-import "./location.json";
+import "./location";
 
 // import { useLeafletMap } from "use-leaflet"
 
