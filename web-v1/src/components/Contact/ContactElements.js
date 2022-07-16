@@ -80,8 +80,29 @@ export const Img = styled.img`
 
 export const Circle = styled.div`
   display: flex;
+  align-items: center;
   width: 100px;
   height: 100px;
+  margin: 0 0 100px 0;
   background-color: green;
   border-radius: 50%;
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  margin: 0 3px 0 18px;
+`;
+
+export const SocialIconLink = styled.a`
+  color: #fff;
+  font-size: 60px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    // font-size:30px;
+    color: #cccccc;
+  }
 `;
