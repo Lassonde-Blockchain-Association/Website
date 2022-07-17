@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
+  font-family: "Spline Sans Mono", monospace;
   min-height: 100vh;
   background: #e6f0ed;
 `;
@@ -12,6 +14,22 @@ export const ContactWrap = styled.div`
   margin-right: auto;
   justify-content: center;
 `;
+
+export const Icon = styled(Link)`
+  /* margin-left: 30px; */
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+`;
+
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
@@ -41,6 +59,7 @@ export const ContactLink = styled.div`
   padding-top: 20px;
   height: 25px;
   font-size: 14px;
+  text-decoration: none;
   /* color: #fff; */
 `;
 
@@ -62,6 +81,7 @@ export const Column1 = styled.div`
 
 export const Column2 = styled.div`
   margin-bottom: 10px;
+  /* margin-top: 100px; */
   padding: 0 15px;
   grid-area: col2;
 `;
