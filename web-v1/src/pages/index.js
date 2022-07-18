@@ -1,12 +1,7 @@
 import React from "react";
-// import React, { useState } from "react";
-// import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HomeSection from "../components/HomeSection";
 import VisionSection from "../components/VisionSection";
-// import { homeObjOne, homeObjThree } from "../components/InfoSection/Data";
-// , homeObjTwo
-// import Projects from "../components/Terms";
 import TeamSection from "../components/TeamSection";
 import Footer from "../components/Footer";
 // import { Router } from 'react-router-dom';

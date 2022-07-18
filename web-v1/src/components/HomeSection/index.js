@@ -1,11 +1,8 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import osm from "./osMaptiler";
 // // import "leaflet/dist/leaflet.css";
 import { Map, MapBox, MapH1, MapP } from "./HomeElements";
-import L, { PolyUtil } from "leaflet";
-import "../../";
 
-// import * as React from "react";
 import {
   MapContainer,
   TileLayer,
@@ -13,33 +10,22 @@ import {
   Popup,
   Polyline,
   FeatureGroup,
-  useMap,
   Polygon,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import "./index.css";
 
-// import "leaflet.polyline.snakeanim";
-// import SnakeAnim from "./SnakeAnim";
 import markerIcon from "./constants";
 import Data from "./location";
 
-// delete L.Icon.Default.prototype._getIconUrl;
-
-// L.Icon.Default.mergeOptions({
-//   iconRetinaUrl: require("leaflet/dist/images/marker-icon-2x.png"),
-//   iconUrl: require("leaflet/dist/images/marker-icon.png"),
-//   shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
-// });
-
 const HomeSection = () => {
-  const [center, setCenter] = useState({ lat: 22.302711, lng: 114.177216 });
-  const Vancouver = [49.246292, -123.116226];
+  // const [center, setCenter] = useState({ lat: 22.302711, lng: 114.177216 });
+  const center = [43.77186, -79.506731];
 
   const [startAnimation, setStartAnimation] = useState(false);
   const startSnake = () => setStartAnimation(true);
 
-  const ZOOM_LEVEL = 7;
+  const ZOOM_LEVEL = 4;
   const ZOOM_MIN = 2.5;
   const mapRef = useRef();
   const polygon = [
@@ -50,14 +36,12 @@ const HomeSection = () => {
   const polyline = [
     [
       [43.77186, -79.506731],
-
       [37.5326, 127.024612],
     ],
     [
       [43.77186, -79.506731],
       [22.302711, 114.177216],
     ],
-    // [43.856098, -79.337021],
   ];
 
   return (
@@ -71,7 +55,7 @@ const HomeSection = () => {
           </MapP>
           <MapContainer
             id="mapid"
-            center={Vancouver}
+            center={center}
             zoom={ZOOM_LEVEL}
             ref={mapRef}
             minZoom={ZOOM_MIN}
@@ -88,17 +72,15 @@ const HomeSection = () => {
               // noWrap={true} //this is the crucial line
             />
             <Polygon
+              // fillOpacity={1}
               positions={polygon}
               color="#004080"
               smoothFactor="2"
               noClip={true}
             />
-            <Polyline positions={polyline} color="yellow" />
-            {/* <SnakeAnim startAnimation={startAnimation} /> */}
+            <Polyline positions={polyline} color="yellow" smoothFactor={9} />
             <FeatureGroup>
               {Data?.map((display) => (
-                // <Polyline positions={polyline} color="red" />
-
                 <Marker
                   key={display.location}
                   position={[display.coordinates[0], display.coordinates[1]]}
@@ -110,12 +92,8 @@ const HomeSection = () => {
                   </Popup>
                 </Marker>
               ))}
-              {/* {Data.map((display) => (
-                <Polyline positions={display.coordinates} color="red" />
-              ))} */}
             </FeatureGroup>
           </MapContainer>
-          {/* <button onClick={startSnake}>Snake it!</button> */}
         </MapBox>
       </Map>
     </>

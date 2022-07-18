@@ -107,7 +107,7 @@ const Navbar = ({ toggle }) => {
 
         {/* </NavbarContainer> */}
         <NavBtn>
-          <NavBtnLink to="/contactus">Contact Us</NavBtnLink>
+          <NavBtnLink to="/contact">Contact Us</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
