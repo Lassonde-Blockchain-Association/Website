@@ -24,7 +24,10 @@ const VisionSection = () => {
         <ValueRow>
           <Column1>
             <VisionH2>Curiosity</VisionH2>
-            <VisionP>Asking questions, exploring.</VisionP>
+            <VisionP>
+              Striving for innovations, curisoity is the first step to be a
+              creative and innovative.{" "}
+            </VisionP>
           </Column1>
 
           <Column1>
@@ -39,7 +42,10 @@ const VisionSection = () => {
         <ValueRow>
           <Column1>
             <VisionH2>Execution</VisionH2>
-            <VisionP>Striving to create products from those ideas.</VisionP>
+            <VisionP>
+              Striving to create products from those ideas. Setting clear
+              expectation by having a transparent priorities.
+            </VisionP>
           </Column1>
 
           <Column1>
