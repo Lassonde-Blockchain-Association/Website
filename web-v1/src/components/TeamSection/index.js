@@ -1,11 +1,11 @@
 import React from "react";
 import * as TeamElements from "./TeamElements";
 
-import img1 from "./images/img1.webp";
-import img2 from "./images/img2.webp";
-import img3 from "./images/img3.jpeg";
-import img4 from "./images/img4.png";
-import img5 from "./images/img5.webp";
+import img1 from "./images/img1.png";
+import img2 from "./images/img2.jpeg";
+import img3 from "./images/img3.png";
+import img4 from "./images/img4.jpeg";
+import img5 from "./images/img5.png";
 
 const TeamSection = () => {
   return (
