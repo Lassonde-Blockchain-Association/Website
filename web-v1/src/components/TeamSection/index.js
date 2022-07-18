@@ -6,6 +6,7 @@ import img2 from "./images/img2.jpeg";
 import img3 from "./images/img3.png";
 import img4 from "./images/img4.jpeg";
 import img5 from "./images/img5.png";
+import img6 from "./images/img6.jpeg";
 
 const TeamSection = () => {
   return (
@@ -73,12 +74,26 @@ const TeamSection = () => {
             </TeamElements.TeamMemberContainer>
 
             {/* 
-      Fifth team member information
-      */}
+        Fifth team member information
+        */}
             <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img5} />
               <TeamElements.TeamMemberDescription>
                 Brian
+                <br></br>
+                Co-founder
+                <br></br>
+                Metamask Wallet Address
+              </TeamElements.TeamMemberDescription>
+            </TeamElements.TeamMemberContainer>
+
+            {/* 
+            Sixth team member information
+            */}
+            <TeamElements.TeamMemberContainer className="App">
+              <TeamElements.TeamMemberPhoto src={img6} />
+              <TeamElements.TeamMemberDescription>
+                Charles
                 <br></br>
                 Co-founder
                 <br></br>

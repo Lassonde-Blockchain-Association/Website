@@ -32,10 +32,10 @@ const VisionSection = () => {
               creative and innovative.{" "}
             </VisionP>
           </Column1>
-        </ValueRow>
 
-        <ValueRow>
-          <VisionPhoto src={img1} />
+          {/* </ValueRow> */}
+
+          {/* <ValueRow> */}
           <Column1>
             <VisionH2>Communication</VisionH2>
             <VisionP>
@@ -43,6 +43,7 @@ const VisionSection = () => {
               and feedback for each other.
             </VisionP>
           </Column1>
+          <VisionPhoto src={img1} />
         </ValueRow>
 
         <ValueRow>
@@ -54,10 +55,9 @@ const VisionSection = () => {
               expectation by having a transparent priorities.
             </VisionP>
           </Column1>
-        </ValueRow>
+          {/* </ValueRow> */}
 
-        <ValueRow>
-          <VisionPhoto src={img1} />
+          {/* <ValueRow> */}
           <Column1>
             <VisionH2>Reflection</VisionH2>
             <VisionP>
@@ -65,6 +65,7 @@ const VisionSection = () => {
               done and brainstorming what we can do better in the future.
             </VisionP>
           </Column1>
+          <VisionPhoto src={img1} />
         </ValueRow>
       </VisionContainer>
 
