@@ -50,3 +50,21 @@ export const Column1 = styled.div`
   width: 400px;
   height: 150px;
 `;
+
+export const VisionPhoto = styled.img`
+  height: 150px;
+  width: 150px;
+  // border-radius: 25px;
+  padding: 10px;
+  align-self: center;
+  display: inline-block;
+  vertical-align: top;
+
+  &:hover {
+    background-color: #fff;
+  }
+  @media only screen and (max-width: 600px) {
+    height: 150px;
+    width: 150px;
+  }
+`;

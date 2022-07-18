@@ -8,8 +8,10 @@ import {
   VisionP,
   ValueRow,
   Column1,
+  VisionPhoto,
 } from "./VisionElements";
 import Timeline from "./timeline";
+import img1 from "./images/img1.png";
 
 const VisionSection = () => {
   return (
@@ -22,6 +24,7 @@ const VisionSection = () => {
         </VisionStatement>
 
         <ValueRow>
+          <VisionPhoto src={img1} />
           <Column1>
             <VisionH2>Curiosity</VisionH2>
             <VisionP>
@@ -29,7 +32,10 @@ const VisionSection = () => {
               creative and innovative.{" "}
             </VisionP>
           </Column1>
+        </ValueRow>
 
+        <ValueRow>
+          <VisionPhoto src={img1} />
           <Column1>
             <VisionH2>Communication</VisionH2>
             <VisionP>
@@ -40,6 +46,7 @@ const VisionSection = () => {
         </ValueRow>
 
         <ValueRow>
+          <VisionPhoto src={img1} />
           <Column1>
             <VisionH2>Execution</VisionH2>
             <VisionP>
@@ -47,7 +54,10 @@ const VisionSection = () => {
               expectation by having a transparent priorities.
             </VisionP>
           </Column1>
+        </ValueRow>
 
+        <ValueRow>
+          <VisionPhoto src={img1} />
           <Column1>
             <VisionH2>Reflection</VisionH2>
             <VisionP>
