@@ -52,7 +52,7 @@ export const ContactH1 = styled.h1`
   color: black;
   font-size: 28px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
 `;
 
 export const ContactLink = styled.div`
@@ -98,12 +98,25 @@ export const Img = styled.img`
   border-radius: 10px;
 `;
 
+// Social Media Styled Components
+export const SocialMediaRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  // grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+`;
+
+export const SocialMediaColumn = styled.div`
+  margin-bottom: 10px;
+  // padding: 0 15px;
+`;
+
 export const Circle = styled.div`
   display: flex;
   align-items: center;
   width: 100px;
   height: 100px;
-  margin: 0 0 100px 0;
+  // margin: 0 0 100px 0;
   background-color: green;
   border-radius: 50%;
 `;
@@ -125,4 +138,30 @@ export const SocialIconLink = styled.a`
     // font-size:30px;
     color: #cccccc;
   }
+`;
+
+// export const HLine = styled.hr`
+//   border: none;
+//   height: 3px;
+//   width: 100px;
+//   color: 'black';
+//   background-color: 'black';
+// `;
+
+// export const HLine = styled.div`
+//   borderTop: "2px solid #fff ";
+//   marginLeft: 20;
+//   marginRight: 20;
+// `;
+
+export const VerticalLine = styled.div`
+  border-left: 6px solid green;
+  height: 100px;
+  margin-left: 45px;
+`;
+
+export const HorizontalLine = styled.div`
+  border-top: 6px solid green;
+  width: 100px;
+  margin-top: 45px;
 `;

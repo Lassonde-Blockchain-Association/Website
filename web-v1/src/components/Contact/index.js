@@ -12,9 +12,13 @@ import {
   Column1,
   Column2,
   TextWrapper,
+  SocialMediaRow,
+  SocialMediaColumn,
   Circle,
   SocialIcons,
   SocialIconLink,
+  HorizontalLine,
+  VerticalLine,
 } from "./ContactElements";
 
 import {
@@ -56,61 +60,56 @@ const Contact = ({ imgStart, img }) => {
 
                 <ContactH1>For Code/Networking Geeks</ContactH1>
                 <Text>
-                  In addition, feel free to explore our open-source projects on
-                  GitHub and see our organization’s LinkedIn page below:
+                If you would like take a backstage tour of our website, feel 
+                free to browse its code on GitHub. It is built using React 
+                and styled components.
                 </Text>
                 <ContactLink>
                   <a href="https://github.com/Lassonde-Blockchain-Club">
                     <FaGithub /> Lassonde-Blockchain-Club{" "}
                   </a>
                 </ContactLink>
-                <ContactLink>
+                {/* <ContactLink>
                   <FaLinkedin /> Lassonde Blockchain Club
-                </ContactLink>
+                </ContactLink> */}
               </TextWrapper>
             </Column1>
             {/* right side */}
             {/* find a img/drawing */}
             <Column2>
-              <InfoRow imgStart={imgStart}>
-                <Column1>
+              {/* <a>
+                <ImgWrap>
+                  <Img src={img} />
+                </ImgWrap>
+              </a> */}
+              <SocialMediaRow>
+                <SocialMediaColumn>
                   <Circle>
                     <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="Discord">
-                        <FaDiscord />
+                      <SocialIconLink href="mailto:lassondeblockchain@gmail.com" target="" aria-label="Mail">
+                        <FaMailBulk />
                       </SocialIconLink>
                     </SocialIcons>
                   </Circle>
+                  <VerticalLine />
+                  <Circle>
+                  </Circle>
+                </SocialMediaColumn>
+                <SocialMediaColumn>
+                  <div style={{marginTop:200}}></div>
+                  <HorizontalLine />
+                </SocialMediaColumn>
+                <SocialMediaColumn>
+                  <div style={{marginTop:200}}></div>
                   <Circle>
                     <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="Instagram">
-                        <FaInstagram />
+                      <SocialIconLink href="https://github.com/Lassonde-Blockchain-Club" target="" aria-label="GitHub">
+                        <FaGithub />
                       </SocialIconLink>
                     </SocialIcons>
                   </Circle>
-                  {/* <a>
-                  <ImgWrap>
-                    <Img src={img} />
-                  </ImgWrap>
-                </a> */}
-                </Column1>
-                <Column2>
-                  <Circle>
-                    <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="Facebook">
-                        <FaFacebook />
-                      </SocialIconLink>
-                    </SocialIcons>
-                  </Circle>
-                  <Circle>
-                    <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="YouTube">
-                        <FaYoutube />
-                      </SocialIconLink>
-                    </SocialIcons>
-                  </Circle>
-                </Column2>
-              </InfoRow>
+                </SocialMediaColumn>
+              </SocialMediaRow>
             </Column2>
           </InfoRow>
         </ContactWrap>
