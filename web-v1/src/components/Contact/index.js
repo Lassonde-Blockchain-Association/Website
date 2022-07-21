@@ -55,6 +55,7 @@ const Contact = ({ imgStart, img }) => {
                 </ContactLink>
 
                 <ContactH1>For Code/Networking Geeks</ContactH1>
+
                 <Text>
                   In addition, feel free to explore our open-source projects on
                   GitHub and see our organization’s LinkedIn page below:
@@ -69,47 +70,43 @@ const Contact = ({ imgStart, img }) => {
                 </ContactLink>
               </TextWrapper>
             </Column1>
+
             {/* right side */}
             {/* find a img/drawing */}
             <Column2>
               <InfoRow imgStart={imgStart}>
-                <Column1>
-                  <Circle>
-                    <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="Discord">
-                        <FaDiscord />
-                      </SocialIconLink>
-                    </SocialIcons>
-                  </Circle>
-                  <Circle>
-                    <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="Instagram">
-                        <FaInstagram />
-                      </SocialIconLink>
-                    </SocialIcons>
-                  </Circle>
-                  {/* <a>
-                  <ImgWrap>
-                    <Img src={img} />
-                  </ImgWrap>
-                </a> */}
-                </Column1>
-                <Column2>
-                  <Circle>
-                    <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="Facebook">
-                        <FaFacebook />
-                      </SocialIconLink>
-                    </SocialIcons>
-                  </Circle>
-                  <Circle>
-                    <SocialIcons>
-                      <SocialIconLink href="" target="" aria-label="YouTube">
-                        <FaYoutube />
-                      </SocialIconLink>
-                    </SocialIcons>
-                  </Circle>
-                </Column2>
+                {/* <Column1> */}
+                <Circle>
+                  <SocialIcons>
+                    <SocialIconLink href="" target="" aria-label="Discord">
+                      <FaDiscord />
+                    </SocialIconLink>
+                  </SocialIcons>
+                </Circle>
+                <Circle>
+                  <SocialIcons>
+                    <SocialIconLink href="" target="" aria-label="Instagram">
+                      <FaInstagram />
+                    </SocialIconLink>
+                  </SocialIcons>
+                </Circle>
+                {/* </Column1> */}
+                {/* <Column2> */}
+                <Circle>
+                  <SocialIcons>
+                    <SocialIconLink href="" target="" aria-label="Facebook">
+                      <FaFacebook />
+                    </SocialIconLink>
+                  </SocialIcons>
+                </Circle>
+                <Circle>
+                  <SocialIcons>
+                    <SocialIconLink href="" target="" aria-label="YouTube">
+                      <FaYoutube />
+                    </SocialIconLink>
+                  </SocialIcons>
+                </Circle>
+                {/* </Column2> */}
               </InfoRow>
             </Column2>
           </InfoRow>

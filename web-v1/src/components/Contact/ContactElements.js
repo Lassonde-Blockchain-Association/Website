@@ -32,6 +32,7 @@ export const Icon = styled(Link)`
 
 export const InfoRow = styled.div`
   display: grid;
+  padding-top: 140px;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
@@ -39,7 +40,7 @@ export const InfoRow = styled.div`
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 140px;
+  /* padding-top: 140px; */
   padding-bottom: 60px;
 
   @media screen and (max-width: 480px) {
@@ -48,30 +49,28 @@ export const TextWrapper = styled.div`
 `;
 
 export const ContactH1 = styled.h1`
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   color: black;
   font-size: 28px;
-  font-weight: 400;
-  text-align: center;
+  font-weight: 700;
+  /* text-align: center; */
 `;
 
 export const ContactLink = styled.div`
   padding-top: 20px;
-  height: 25px;
+  /* height: 25px; */
   font-size: 14px;
   text-decoration: none;
-  /* color: #fff; */
 `;
 
 export const Text = styled.span`
-  margin-top: 24px;
-  /* color: #fff; */
-  font-size: 14px;
+  /* margin-top: 24px; */
+  font-size: 18px;
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 10px;
-  padding: 0 15px;
+  /* margin-bottom: 10px; */
+  padding: 0 50px;
   grid-area: col1;
 
   @media screen and (max-width: 480px) {
@@ -80,9 +79,9 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   /* margin-top: 100px; */
-  padding: 0 15px;
+  padding: 0 50px;
   grid-area: col2;
 `;
 
@@ -113,7 +112,7 @@ export const SocialIcons = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 240px;
-  margin: 0 3px 0 18px;
+  margin: 0 50px 0 20px;
 `;
 
 export const SocialIconLink = styled.a`
