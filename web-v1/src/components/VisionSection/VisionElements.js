@@ -12,11 +12,11 @@ export const VisionContainer = styled.div`
 `;
 
 export const VisionH1 = styled.h1`
-  text-align: center;
+  margin: 10px 200px 0 200px;
 `;
 
 export const VisionStatement = styled.p`
-  text-align: center;
+  margin: 10px 200px 0 200px;
 `;
 
 export const VisionH2 = styled.h2``;
