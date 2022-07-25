@@ -4,6 +4,7 @@ import HomeSection from "../components/HomeSection";
 import VisionSection from "../components/VisionSection";
 import TeamSection from "../components/TeamSection";
 import Footer from "../components/Footer";
+import CardVision from "../components/Card";
 // import { Router } from 'react-router-dom';
 
 const Home = () => {
@@ -19,10 +20,12 @@ const Home = () => {
       {/* <Navbar toggle={toggle} /> */}
       <Navbar />
       <HomeSection />
-      <VisionSection />
+      {/* <VisionSection /> */}
+      <CardVision/>
       {/* <Terms /> */}
       {/* <InfoSection {...homeObjTwo} /> */}
       <TeamSection />
+      
       <Footer />
     </>
   );

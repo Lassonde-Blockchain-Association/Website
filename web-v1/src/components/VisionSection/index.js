@@ -12,6 +12,7 @@ import {
 } from "./VisionElements";
 import Timeline from "./timeline";
 import img1 from "./images/img1.png";
+import { first_card } from "./index";
 
 const VisionSection = () => {
   return (
@@ -32,6 +33,7 @@ const VisionSection = () => {
               creative and innovative.{" "}
             </VisionP>
           </Column1>
+          <first_card/>
 
           {/* </ValueRow> */}
 
