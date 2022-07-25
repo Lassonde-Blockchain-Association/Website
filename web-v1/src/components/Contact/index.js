@@ -12,9 +12,13 @@ import {
   Column1,
   Column2,
   TextWrapper,
+  SocialMediaRow,
+  SocialMediaColumn,
   Circle,
   SocialIcons,
   SocialIconLink,
+  HorizontalLine,
+  VerticalLine,
 } from "./ContactElements";
 
 import {
@@ -57,17 +61,18 @@ const Contact = ({ imgStart, img }) => {
                 <ContactH1>For Code/Networking Geeks</ContactH1>
 
                 <Text>
-                  In addition, feel free to explore our open-source projects on
-                  GitHub and see our organization’s LinkedIn page below:
+                  If you would like take a backstage tour of our website, feel
+                  free to browse its code on GitHub. It is built using React and
+                  styled components.
                 </Text>
                 <ContactLink>
                   <a href="https://github.com/Lassonde-Blockchain-Club">
                     <FaGithub /> Lassonde-Blockchain-Club{" "}
                   </a>
                 </ContactLink>
-                <ContactLink>
+                {/* <ContactLink>
                   <FaLinkedin /> Lassonde Blockchain Club
-                </ContactLink>
+                </ContactLink> */}
               </TextWrapper>
             </Column1>
 
