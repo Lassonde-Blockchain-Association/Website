@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "framer-motion": "^6.5.1",
     "gh-pages": "^4.0.0",
     "leaflet.motion": "^0.3.2",
     "react-icons": "^4.3.1",

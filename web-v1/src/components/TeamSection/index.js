@@ -23,7 +23,7 @@ const TeamSection = () => {
               <TeamElements.TeamMemberDescription>
                 Samson Chan
                 <br></br>
-                Co-Founder
+                Co-Founder and Product Manager
                 <br></br>
                 0x5EFB44eD50fC56F957E06C5c...
               </TeamElements.TeamMemberDescription>
@@ -62,7 +62,7 @@ const TeamSection = () => {
             {/* 
       Fourth team member information
       */}
-            <TeamElements.TeamMemberContainer className="App">
+            {/* <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img4} />
               <TeamElements.TeamMemberDescription>
                 Sam
@@ -71,7 +71,7 @@ const TeamSection = () => {
                 <br></br>
                 Metamask Wallet Address
               </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
+            </TeamElements.TeamMemberContainer> */}
 
             {/* 
         Fifth team member information

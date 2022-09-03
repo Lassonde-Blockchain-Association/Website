@@ -27,7 +27,7 @@ export const Nav = styled.nav`
 
 export const NavLogo = styled(Link)`
   /* color: ${({ scrollNav }) => (scrollNav ? "transparent" : "black")}; */
-  color: black;
+  color: white;
   font-size: 35px;
   align-items: center;
   text-decoration: none;
@@ -79,7 +79,7 @@ export const NavLink = styled(LinkS)`
   font-size: 18px;
   /* font-weight: bold; */
 
-  color: black;
+  color: white;
   display: flex;
   align-items: center;
   text-decoration: none;
