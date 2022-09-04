@@ -18,7 +18,7 @@ function Timeline() {
 
   return (
     <div>
-      <TimelineH1 id="timeline">Timeline</TimelineH1>
+      <TimelineH1 id="timeline">Roadmap</TimelineH1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
