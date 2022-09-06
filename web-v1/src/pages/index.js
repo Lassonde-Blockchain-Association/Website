@@ -21,11 +21,11 @@ const Home = () => {
       <Navbar />
       <HomeSection />
       {/* <VisionSection /> */}
-      <CardVision/>
+      <CardVision />
       {/* <Terms /> */}
       {/* <InfoSection {...homeObjTwo} /> */}
-      <TeamSection />
-      
+      {/* <TeamSection /> */}
+
       <Footer />
     </>
   );
