@@ -1,13 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import HomeSection from "../components/HomeSection";
-import VisionSection from "../components/VisionSection";
+import Home from "../components/Home";
+import Roadmap from "../components/Roadmap";
 import TeamSection from "../components/TeamSection";
 import Footer from "../components/Footer";
-import CardVision from "../components/Card";
+import Vision from "../components/Vision";
 // import { Router } from 'react-router-dom';
 
-const Home = () => {
+const Main = () => {
   // const [isOpen, setIsOpen] = useState(false);
 
   // const toggle = () => {
@@ -19,16 +19,13 @@ const Home = () => {
       {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
       {/* <Navbar toggle={toggle} /> */}
       <Navbar />
-      <HomeSection />
-      {/* <VisionSection /> */}
-      <CardVision />
-      {/* <Terms /> */}
-      {/* <InfoSection {...homeObjTwo} /> */}
+      <Home />
+      <Vision />
+      <Roadmap />
       {/* <TeamSection /> */}
-
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default Main;

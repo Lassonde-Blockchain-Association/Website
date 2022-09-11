@@ -40,7 +40,3 @@ export const MapP = styled.p`
   /* font-size: 16px;
   text-align: center; */
 `;
-
-// export const MapContainer = styled.div`
-//   width: 70%;
-// `;

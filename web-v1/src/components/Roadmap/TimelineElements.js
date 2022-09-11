@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const TimelineBody = styled.body`
+export const RoadmapContainer = styled.body`
   /* background-color: aqua; */
+  height: 100vh;
   font-family: "Spline Sans Mono", monospace;
-
   font-size: 16px;
   color: rgb(53, 53, 53);
 `;

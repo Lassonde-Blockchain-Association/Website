@@ -88,7 +88,7 @@ const Navbar = ({ toggle }) => {
             exact="true"
             offset={-100}
           >
-            Timeline
+            Roadmap
           </NavLink>
           <NavLink
             to="team"

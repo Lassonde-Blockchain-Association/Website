@@ -11,11 +11,14 @@ import {
   ProjectsWrapper,
   TopContainer,
   BottomContainer,
-} from "./CardElements";
-import Timeline from "./timeline";
+} from "./VisionElements";
 
-const CardVision = () => {
+const Vision = () => {
   const [hover, setHover] = useState(false);
+  const [hover2, setHover2] = useState(false);
+  const [hover3, setHover3] = useState(false);
+  const [hover4, setHover4] = useState(false);
+
   const onHover = () => {
     setHover(true);
   };
@@ -23,21 +26,18 @@ const CardVision = () => {
     setHover(false);
   };
 
-  const [hover2, setHover2] = useState(false);
   const onHover2 = () => {
     setHover2(true);
   };
   const onLeave2 = () => {
     setHover2(false);
   };
-  const [hover3, setHover3] = useState(false);
   const onHover3 = () => {
     setHover3(true);
   };
   const onLeave3 = () => {
     setHover3(false);
   };
-  const [hover4, setHover4] = useState(false);
   const onHover4 = () => {
     setHover4(true);
   };
@@ -60,7 +60,6 @@ const CardVision = () => {
             role="button"
             tabIndex="-3"
           >
-            
             <TopContainer>
               <CardText>Curiosity</CardText>
             </TopContainer>
@@ -72,13 +71,14 @@ const CardVision = () => {
             ) : (
               ""
             )}
-            
+
             <CircleWrapper
-            onMouseEnter={onHover}
-            onMouseLeave={onLeave}
-            role="button"
-            tabIndex="-3">
-              {hover?  <Circle /> :""}
+              onMouseEnter={onHover}
+              onMouseLeave={onLeave}
+              role="button"
+              tabIndex="-3"
+            >
+              {hover ? <Circle /> : ""}
             </CircleWrapper>
           </CardContainer>
 
@@ -89,12 +89,12 @@ const CardVision = () => {
             tabIndex="-3"
           >
             <CircleWrapper
-            onMouseEnter={onHover2}
-            onMouseLeave={onLeave2}
-            role="button"
-            tabIndex="-3">
-              {hover2?  <Circle /> :""}
-              
+              onMouseEnter={onHover2}
+              onMouseLeave={onLeave2}
+              role="button"
+              tabIndex="-3"
+            >
+              {hover2 ? <Circle /> : ""}
             </CircleWrapper>
             <TopContainer>
               <CardText>Execution</CardText>
@@ -116,12 +116,12 @@ const CardVision = () => {
             tabIndex="-3"
           >
             <CircleWrapper
-            onMouseEnter={onHover3}
-            onMouseLeave={onLeave3}
-            role="button"
-            tabIndex="-3">
-              {hover3?  <Circle /> :""}
-              
+              onMouseEnter={onHover3}
+              onMouseLeave={onLeave3}
+              role="button"
+              tabIndex="-3"
+            >
+              {hover3 ? <Circle /> : ""}
             </CircleWrapper>
             <TopContainer>
               <CardText>Communication</CardText>
@@ -143,12 +143,12 @@ const CardVision = () => {
             tabIndex="-3"
           >
             <CircleWrapper
-            onMouseEnter={onHover4}
-            onMouseLeave={onLeave4}
-            role="button"
-            tabIndex="-3">
-              {hover4?  <Circle /> :""}
-              
+              onMouseEnter={onHover4}
+              onMouseLeave={onLeave4}
+              role="button"
+              tabIndex="-3"
+            >
+              {hover4 ? <Circle /> : ""}
             </CircleWrapper>
             <TopContainer>
               <CardText>Reflection</CardText>
@@ -164,9 +164,8 @@ const CardVision = () => {
           </CardContainer>
         </ProjectsWrapper>
       </VisionContainer>
-      <Timeline />
     </>
   );
 };
 
-export default CardVision;
+export default Vision;

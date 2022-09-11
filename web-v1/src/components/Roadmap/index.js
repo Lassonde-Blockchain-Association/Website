@@ -3,7 +3,7 @@ import { ReactComponent as WorkIcon } from "../../images/work.svg";
 import { ReactComponent as SchoolIcon } from "../../images/school.svg";
 
 import timelineElements from "./TimelineComponents";
-import { TimelineH1 } from "./TimelineElements";
+import { TimelineH1, RoadmapContainer } from "./TimelineElements";
 
 import {
   VerticalTimeline,
@@ -12,12 +12,12 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
-function Timeline() {
+const Roadmap = () => {
   let workIconStyles = { background: "#06D6A0" };
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div>
+    <RoadmapContainer>
       <TimelineH1 id="timeline">Roadmap</TimelineH1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
@@ -49,8 +49,8 @@ function Timeline() {
           );
         })}
       </VerticalTimeline>
-    </div>
+    </RoadmapContainer>
   );
-}
+};
 
-export default Timeline;
+export default Roadmap;
