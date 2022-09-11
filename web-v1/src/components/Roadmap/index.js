@@ -32,6 +32,7 @@ const Roadmap = () => {
               key={element.key}
               date={element.date}
               dateClassName="date"
+              contentStyle={{ background: "white", color: "black" }}
               iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
               icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
             >

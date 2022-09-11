@@ -2,11 +2,15 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const VisionContainer = styled.div`
-  height: 100vh;
-  width: auto;
-  margin: 80px;
+  *height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
+  // background: black;
+  color: white;
 `;
 
 export const VisionH1 = styled.h1`

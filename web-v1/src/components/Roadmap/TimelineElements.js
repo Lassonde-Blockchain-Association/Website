@@ -6,6 +6,7 @@ export const RoadmapContainer = styled.body`
   font-family: "Spline Sans Mono", monospace;
   font-size: 16px;
   color: rgb(53, 53, 53);
+  background: grey;
 `;
 
 export const TimelineH3 = styled.h3`
