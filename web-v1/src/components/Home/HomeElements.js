@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `;
 
 export const Background = styled.video`
-  margin: -20px;
-  height: 100%;
-  object-fit: cover;
+  margin: 0px;
+  width: 100%;
+  // height: 100%;
+  object-fit: contain;
 `;
 
 export const MapBox = styled.div`
