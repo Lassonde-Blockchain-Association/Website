@@ -15,7 +15,7 @@ export const Background = styled.video`
 export const MapBox = styled.div`
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   top: 0;
   display: flex;
   flex-direction: column;

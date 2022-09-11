@@ -11,7 +11,9 @@ import {
   ProjectsWrapper,
   TopContainer,
   BottomContainer,
+  Background,
 } from "./VisionElements";
+import videoBg from "../../video/bc3.mp4";
 
 const Vision = () => {
   const [hover, setHover] = useState(false);
@@ -48,6 +50,7 @@ const Vision = () => {
   return (
     <>
       <VisionContainer id="vision">
+        <Background src={videoBg} autoPlay loop muted />
         <VisionH1>Vision</VisionH1>
         <VisionStatement>
           By asking questions and considering others' feedback, we hope to learn
