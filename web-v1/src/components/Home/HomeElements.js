@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-export const Map = styled.div`
+export const HomeContainer = styled.div`
   width: 100%;
   height: 100vh;
 `;
 
 export const Background = styled.video`
-  width: 100%;
+  margin: -20px;
   height: 100%;
   object-fit: cover;
 `;
@@ -23,15 +23,6 @@ export const MapBox = styled.div`
   color: white;
 `;
 
-export const Overlay = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  /* background-color: #00000cc; */
-  background-color: rgba(0, 0, 0, 0.4);
-`;
 export const MapH1 = styled.h1`
   /* font-size: 30px; */
   /* text-align: center; */

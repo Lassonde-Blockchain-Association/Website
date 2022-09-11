@@ -2,7 +2,7 @@ import "../../App.css";
 import { ReactComponent as WorkIcon } from "../../images/work.svg";
 import { ReactComponent as SchoolIcon } from "../../images/school.svg";
 
-import timelineElements from "./TimelineComponents";
+import info from "./RoadmapInfo";
 import { TimelineH1, RoadmapContainer } from "./TimelineElements";
 
 import {
@@ -20,7 +20,7 @@ const Roadmap = () => {
     <RoadmapContainer>
       <TimelineH1 id="timeline">Roadmap</TimelineH1>
       <VerticalTimeline>
-        {timelineElements.map((element) => {
+        {info.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&

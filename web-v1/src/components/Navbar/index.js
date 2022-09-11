@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
             duration={500}
             spy={true}
             exact="true"
-            offset={-200}
+            offset={-100}
           >
             Vision
           </NavLink>
@@ -90,7 +90,7 @@ const Navbar = ({ toggle }) => {
           >
             Roadmap
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="team"
             smooth={true}
             duration={500}
@@ -99,7 +99,7 @@ const Navbar = ({ toggle }) => {
             offset={-100}
           >
             Team
-          </NavLink>
+          </NavLink> */}
         </NavMenu>
         {/* <NavLink to="/sign-up" activeStyle>
             Contents

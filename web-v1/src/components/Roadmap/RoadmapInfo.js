@@ -1,4 +1,4 @@
-let timelineElements = [
+let info = [
   {
     id: 1,
     title: "NFT Project",
@@ -29,4 +29,4 @@ let timelineElements = [
   },
 ];
 
-export default timelineElements;
+export default info;

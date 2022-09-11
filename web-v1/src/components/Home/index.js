@@ -1,12 +1,11 @@
 import React, { useState, useRef } from "react";
-import { Map, MapBox, MapH1, MapP, Background, Overlay } from "./HomeElements";
+import { HomeContainer, MapBox, MapH1, MapP, Background } from "./HomeElements";
 import videoBg from "../../video/bc2.mp4";
 
 const Home = () => {
   return (
     <>
-      <Map id="home">
-        <Overlay />
+      <HomeContainer id="home">
         <Background src={videoBg} autoPlay loop muted />
         <MapBox>
           <MapH1>Lassonde Blockchain</MapH1>
@@ -15,7 +14,7 @@ const Home = () => {
             blockchain, web3.0, metaverse, and more.
           </MapP>
         </MapBox>
-      </Map>
+      </HomeContainer>
     </>
   );
 };

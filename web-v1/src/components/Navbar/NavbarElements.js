@@ -12,21 +12,17 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  /* .navbar.active {
-        background: linear-gradient(90deg, #000 
-        (66, 2, 194) 0%, #fff (0, 78, 194) 100%);
-        color: #fff;
-    } */
-  background: ${({ scrollNav }) => (scrollNav ? "#FFFFFF" : "transparent")};
+  /* background: ${({ scrollNav }) => (scrollNav ? "#FFFFFF" : "black")}; */
+  background: black;
   /* height: ${({ scrollNav }) => (scrollNav ? "80px" : "65px")}; */
-  height: 55px;
+  height: 60px;
   /* margin-top: ${({ scrollNav }) => (scrollNav ? "-80px" : "-120px")}; */
   transition: ${({ scrollNav }) =>
     scrollNav ? "all 0.3s ease-in-out" : "none"};
 `;
 
 export const NavLogo = styled(Link)`
-  /* color: ${({ scrollNav }) => (scrollNav ? "transparent" : "black")}; */
+  /* color: ${({ scrollNav }) => (scrollNav ? "#FFFFFF" : "black")}; */
   color: white;
   font-size: 35px;
   align-items: center;
@@ -103,9 +99,9 @@ export const NavBtn = styled.nav`
 
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
-  background: #256ce1;
+  background: #ffffff;
   padding: 10px 22px;
-  color: #fff;
+  color: black;
   border: none;
   outline: none;
   cursor: pointer;
@@ -114,7 +110,7 @@ export const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: #054382;
+    color: #ffffff;
   }
 `;

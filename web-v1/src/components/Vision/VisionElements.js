@@ -1,6 +1,25 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
+export const VisionContainer = styled.div`
+  height: 100vh;
+  width: auto;
+  margin: 80px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const VisionH1 = styled.h1`
+  margin-left: 100px;
+  /* text-align: center; */
+`;
+
+export const VisionStatement = styled.h2`
+  /* margin: 10px 200px 0 200px; */
+  margin: 50px;
+  text-align: center;
+`;
+
 export const CardContainer = styled.div`
   height: 500px;
   width: 320px;
@@ -57,7 +76,7 @@ export const TopContainer = styled.div`
   position: relative;
   align-items: center;
   justify-content: flex-end;
-  padding: 1em 15px;
+  padding-bottom: 15px;
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -93,45 +112,4 @@ export const CardText = styled.h1`
   z-index: 10;
   font-size: 30px;
   font-weight: 900;
-`;
-
-export const ShoesWrapper = styled.div`
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Shoes = styled(motion.div)`
-  width: auto;
-  height: 190px;
-  z-index: 99;
-  user-select: none;
-  margin-right: 3em;
-  margin-top: 4em;
-  img {
-    width: auto;
-    height: 100%;
-    user-select: none;
-  }
-`;
-
-export const VisionContainer = styled.div`
-  height: 100vh;
-  width: auto;
-
-  display: flex;
-  flex-direction: column;
-`;
-
-export const VisionH1 = styled.h1`
-  /* margin: 10px 200px 0 200px; */
-  text-align: center;
-`;
-
-export const VisionStatement = styled.p`
-  /* margin: 10px 200px 0 200px; */
-  text-align: center;
 `;
