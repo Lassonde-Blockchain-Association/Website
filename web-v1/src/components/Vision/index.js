@@ -50,7 +50,7 @@ const Vision = () => {
   return (
     <>
       <VisionContainer id="vision">
-        <Background src={videoBg} autoPlay loop muted />
+        {/* <Background src={videoBg} autoPlay loop muted /> */}
         <VisionH1>Vision</VisionH1>
         <VisionStatement>
           By asking questions and considering others' feedback, we hope to learn
