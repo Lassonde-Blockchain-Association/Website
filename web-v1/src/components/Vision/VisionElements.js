@@ -28,15 +28,15 @@ export const Background = styled.video`
 `;
 
 export const VisionH1 = styled.h1`
-  // margin-left: 100px;
-  text-align: center;
+  margin-left: 100px;
+  text-align: left;
+  margin: 10px 200px 50px 200px;
   position: relative;
 `;
 
 export const VisionStatement = styled.h2`
-  /* margin: 10px 200px 0 200px; */
-  margin: 10px;
-  text-align: center;
+  margin: 10px 200px 50px 200px;
+  text-align: left;
   position: relative;
 `;
 
