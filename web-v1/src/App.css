@@ -1,41 +1,3 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .vertical-timeline-element-content {
   box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25), 0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
@@ -51,10 +13,6 @@
   }
 }
 
-.date {
-  /* color: rgb(201, 201, 255); */
-  color: black;
-}
 
 #description {
   margin: 1.5em 0 2em 0;
@@ -71,28 +29,21 @@
   background-color: #06d6a0;
 }
 
-.workButton:hover {
+/* .workButton:hover {
   background-color: #0ac593;
-}
+} */
 
 .schoolButton {
   background-color: #f9c74f;
 }
 
-.schoolButton:hover {
+/* .schoolButton:hover {
   background-color: #f3bc3c;
-}
-
+} */
+/* 
 body {
-  /* background-color: aqua; */
-  /* background-color: #CACD73; */
-  /* background-color: #E6F0ED; */
   background-color: #101522;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: rgb(53, 53, 53);
-}
-
-h3 {
-  padding-top: 0.25em;
-} 
+} */

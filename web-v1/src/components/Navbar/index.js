@@ -8,6 +8,7 @@ import {
   NavBtnLink,
   NavBtn,
   NavMenu,
+  NavbarContainer,
 } from "./NavbarElements";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -49,66 +50,56 @@ const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav scrollNav={scrollNav}>
-        {/* <NavbarContainer> */}
-        {/* H1 is our header of navbar */}
-        <NavLogo to="/" onClick={toggleHome}>
-          LBC
-        </NavLogo>
-        <NavMenu>
-          <NavLink
-            // to="home"
-            smooth={true}
-            duration={500}
-            spy={true}
-            // exact="true"
-            // offset={-75}
-            to="/"
-            onClick={toggleHome}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="vision"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-100}
-          >
-            Vision
-          </NavLink>
-          {/* <NavLink to="/services" activeStyle>
+        <NavbarContainer>
+          <NavLogo to="/" onClick={toggleHome}>
+            LBC
+          </NavLogo>
+          <NavMenu>
+            <NavLink
+              // to="home"
+              smooth={true}
+              duration={500}
+              spy={true}
+              // exact="true"
+              // offset={-75}
+              to="/"
+              onClick={toggleHome}
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="vision"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-100}
+            >
+              Vision
+            </NavLink>
+            {/* <NavLink to="/services" activeStyle>
             Terms */}
-          {/* </NavLink> */}
-          <NavLink
-            to="timeline"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-100}
-          >
-            Roadmap
-          </NavLink>
-          {/* <NavLink
-            to="team"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-100}
-          >
-            Team
-          </NavLink> */}
-        </NavMenu>
-        {/* <NavLink to="/sign-up" activeStyle>
+            {/* </NavLink> */}
+            <NavLink
+              to="timeline"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-100}
+            >
+              Roadmap
+            </NavLink>
+
+            {/* <NavLink to="/sign-up" activeStyle>
             Contents
           </NavLink> */}
-
-        {/* </NavbarContainer> */}
-        <NavBtn>
-          <NavBtnLink to="/contact">Contact Us</NavBtnLink>
-        </NavBtn>
+          </NavMenu>
+          <NavBtn>
+            <NavBtnLink to="/contact">Contact Us</NavBtnLink>
+            <NavBtnLink to="https://discord.gg/JuCmutKUFM">Discord</NavBtnLink>
+          </NavBtn>
+        </NavbarContainer>
       </Nav>
     </>
   );

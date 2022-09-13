@@ -4,19 +4,15 @@ import { motion } from "framer-motion";
 export const VisionContainer = styled.div`
   height: 100vh;
   width: 100%;
-  margin: 0px;
-  padding: 0px 0px;
+  /* height: 100%; */
+
+  /* margin: -5px; */
+  /* padding: px; */
   display: flex;
   flex-direction: column;
-  // background: black;
+  background: black;
   color: white;
   justify-content: center;
-
-  // Add background image
-  background-image: url("../../images/visionbg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
 `;
 
 export const Background = styled.video`
@@ -30,7 +26,7 @@ export const Background = styled.video`
 export const VisionH1 = styled.h1`
   margin-left: 100px;
   text-align: left;
-  margin: 10px 200px 50px 200px;
+  /* margin: 10px 200px 50px 200px; */
   position: relative;
 `;
 

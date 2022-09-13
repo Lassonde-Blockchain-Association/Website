@@ -5,15 +5,10 @@ import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   font-family: "Spline Sans Mono", monospace;
-  letter-spacing: -1px;
-  top: 0;
   position: sticky;
-  display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 10;
-  /* background: ${({ scrollNav }) => (scrollNav ? "#FFFFFF" : "black")}; */
-  background: black;
+  background: ${({ scrollNav }) => (scrollNav ? "#FFFFFF" : "transparent")};
   /* height: ${({ scrollNav }) => (scrollNav ? "80px" : "65px")}; */
   height: 60px;
   /* margin-top: ${({ scrollNav }) => (scrollNav ? "-80px" : "-120px")}; */
@@ -21,29 +16,20 @@ export const Nav = styled.nav`
     scrollNav ? "all 0.3s ease-in-out" : "none"};
 `;
 
+export const NavbarContainer = styled.div`
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+`;
+
 export const NavLogo = styled(Link)`
   /* color: ${({ scrollNav }) => (scrollNav ? "#FFFFFF" : "black")}; */
   color: white;
   font-size: 35px;
-  align-items: center;
   text-decoration: none;
   font-weight: bold;
-  padding-top: 7px;
+  padding-right: 10%;
 `;
-
-// export const NavbarContainer = styled.div`
-//     color: #fff;
-//     display: flex;
-//     align-items: center;
-//     text-decoration: none;
-//     padding: 0 1rem;
-//     height: 100%;
-//     cursor: pointer;
-
-//     &.active {
-//         color: #15cdfc;
-//     }
-// `;
 
 // export const Bars = styled(FaBars)`
 // display: none;
@@ -61,9 +47,10 @@ export const NavLogo = styled(Link)`
 // `
 
 export const NavMenu = styled.div`
+  padding: 0 10% 0 10%;
   display: flex;
   align-items: center;
-  margin-right: -24px;
+  /* padding: 20px; */
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -73,14 +60,11 @@ export const NavMenu = styled.div`
 export const NavLink = styled(LinkS)`
   /* color: ${({ scrollNav }) => (scrollNav ? "white" : "black")}; */
   font-size: 18px;
-  /* font-weight: bold; */
-
   color: white;
-  display: flex;
-  align-items: center;
+  display: inline-block;
   text-decoration: none;
-  padding: 0 1rem;
-  height: 100%;
+  padding: 0 1.2rem;
+  /* height: 100%; */
   cursor: pointer;
 
   /* &:hover {
@@ -88,18 +72,15 @@ export const NavLink = styled(LinkS)`
     } */
 `;
 export const NavBtn = styled.nav`
+  /* margin: 50px; */
+  /* padding: 100px; */
   display: flex;
-  align-items: center;
-  margin-right: 24px;
-
-  @media screen and (max-width: 768) {
-    display: none;
-  }
 `;
 
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
   background: #ffffff;
+  margin-left: 10px;
   padding: 10px 22px;
   color: black;
   border: none;
