@@ -4,8 +4,8 @@ export const RoadmapContainer = styled.body`
   /* background-color: aqua; */
   width: 100%;
   height: 100vh;
-  padding: 40px 20px;
-  justify-content: center:
+  /* padding: 40px 20px; */
+  justify-content: center;
   font-family: "Spline Sans Mono", monospace;
   font-size: 16px;
   color: rgb(53, 53, 53);

@@ -10,6 +10,7 @@ export const Background = styled.video`
   width: 100%;
   // height: 100%;
   object-fit: contain;
+  background-size: cover;
 `;
 
 export const MapBox = styled.div`

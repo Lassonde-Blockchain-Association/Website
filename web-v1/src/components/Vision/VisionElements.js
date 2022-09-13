@@ -20,7 +20,7 @@ export const VisionContainer = styled.div`
 `;
 
 export const Background = styled.video`
-  margin: -5px;
+  /* margin: -5px; */
   width: 100%;
   // height: 100vh;
   object-fit: cover;
