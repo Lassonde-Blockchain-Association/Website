@@ -1,44 +1,46 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
-export const VisionContainer = styled.div`
-  height: 100vh;
+export const VisionSection = styled.div`
+  /* height: 100vh; */
   width: 100%;
-  /* height: 100%; */
-
-  /* margin: -5px; */
-  /* padding: px; */
   display: flex;
   flex-direction: column;
-  background: black;
-  color: white;
   justify-content: center;
+  background-color: #101522;
+  margin-top: -5px;
+`;
+export const VisionContainer = styled.div`
+  color: white;
+  height: 100vh;
+  /* width: 100%; */
+  /* margin: 10px 200px 50px 200px; */
 `;
 
-export const Background = styled.video`
-  /* margin: -5px; */
-  width: 100%;
-  // height: 100vh;
-  object-fit: cover;
-  position: absolute;
-`;
+// export const Background = styled.video`
+//   /* margin: -5px; */
+//   width: 100%;
+//   // height: 100vh;
+//   object-fit: cover;
+//   position: absolute;
+// `;
 
 export const VisionH1 = styled.h1`
   margin-left: 100px;
+  margin-top: 10%;
   text-align: left;
-  /* margin: 10px 200px 50px 200px; */
   position: relative;
 `;
 
 export const VisionStatement = styled.h2`
-  margin: 10px 200px 50px 200px;
+  margin: 50px 200px 50px 200px;
   text-align: left;
   position: relative;
 `;
 
 export const CardContainer = styled.div`
   height: 500px;
-  width: 320px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
@@ -50,9 +52,7 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   &:hover {
-    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    /* opacity: 0.3; */
     cursor: pointer;
   }
 `;
@@ -66,19 +66,17 @@ export const CircleWrapper = styled.div`
   overflow: hidden;
   z-index: 1;
   border-top-right-radius: 25px;
+  /* border-botton-radius: 25px; */
   &:hover {
-    transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    /* opacity: 0.3; */
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 `;
 export const Circle = styled.div`
   position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 19em;
-  right: -1em;
+  width: 100%;
+  height: 100%;
+  top: 15em;
   z-index: 2;
   background-color: #ffccbc;
   border-radius: 50%;
@@ -96,7 +94,7 @@ export const TopContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-  max-width: 1300px;
+  max-width: 80%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -117,7 +115,7 @@ export const BottomContainer = styled.div`
   flex: 0.8;
   padding: 0 1em;
   color: black;
-  z-index: 3;
+  z-index: 5;
 `;
 
 export const CardText = styled.h1`

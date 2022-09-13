@@ -2,15 +2,18 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   width: 100%;
+  /* height: 105vh; */
   height: 100%;
-  margin-top: -60px;
+
+  /* margin-top: -65px; */
 `;
 
 export const Background = styled.video`
   /* margin: 0px; */
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  margin-top: -60px;
+  /* object-fit: contain; */
   z-index: 0;
   background-size: cover;
   filter: brightness(60%);

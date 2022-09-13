@@ -12,7 +12,7 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
-// import videoBg from "../../video/bc3.mp4";
+import img from "../../images/LBC.png";
 
 const Roadmap = () => {
   let workIconStyles = { background: "#06D6A0" };
@@ -20,7 +20,7 @@ const Roadmap = () => {
 
   return (
     <RoadmapContainer>
-      {/* <Background src={videoBg} autoPlay loop muted /> */}
+      {/* <Background src={img} /> */}
       <TimelineH1 id="timeline">Roadmap</TimelineH1>
       <VerticalTimeline>
         {info.map((element) => {
