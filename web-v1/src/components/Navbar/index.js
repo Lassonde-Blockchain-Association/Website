@@ -9,6 +9,7 @@ import {
   NavBtn,
   NavMenu,
   NavbarContainer,
+  Discordbutton,
 } from "./NavbarElements";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -97,7 +98,10 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="/contact">Contact Us</NavBtnLink>
-            <NavBtnLink to="https://discord.gg/JuCmutKUFM">Discord</NavBtnLink>
+
+            <Discordbutton href="https://discord.gg/JuCmutKUFM">
+              Discord
+            </Discordbutton>
           </NavBtn>
         </NavbarContainer>
       </Nav>

@@ -17,14 +17,6 @@ export const VisionContainer = styled.div`
   /* margin: 10px 200px 50px 200px; */
 `;
 
-// export const Background = styled.video`
-//   /* margin: -5px; */
-//   width: 100%;
-//   // height: 100vh;
-//   object-fit: cover;
-//   position: absolute;
-// `;
-
 export const VisionH1 = styled.h1`
   margin-left: 100px;
   margin-top: 10%;

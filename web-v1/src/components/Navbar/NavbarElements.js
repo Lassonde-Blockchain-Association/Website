@@ -95,3 +95,22 @@ export const NavBtnLink = styled(Link)`
     color: #ffffff;
   }
 `;
+
+export const Discordbutton = styled.a`
+  border-radius: 4px;
+  background: #ffffff;
+  margin-left: 10px;
+  padding: 10px 22px;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #054382;
+    color: #ffffff;
+  }
+`;
