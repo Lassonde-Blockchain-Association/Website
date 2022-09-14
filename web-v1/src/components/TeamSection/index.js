@@ -3,7 +3,7 @@ import * as TeamElements from "./TeamElements";
 
 import img1 from "./images/img1.jpeg";
 import img2 from "./images/img2.jpeg";
-import img3 from "./images/img3.png";
+import img3 from "./images/img3.jpeg";
 import img4 from "./images/img4.jpeg";
 import img5 from "./images/img5.png";
 import img6 from "./images/img6.jpeg";
