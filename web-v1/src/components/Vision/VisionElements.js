@@ -18,13 +18,13 @@ export const VisionContainer = styled.div`
 `;
 
 export const VisionH1 = styled.h1`
-  margin-left: 100px;
-  margin-top: 10%;
+  margin-left: 200px;
+  margin-top: 5%;
   text-align: left;
   position: relative;
 `;
 
-export const VisionStatement = styled.h2`
+export const VisionStatement = styled.h4`
   margin: 50px 200px 50px 200px;
   text-align: left;
   position: relative;

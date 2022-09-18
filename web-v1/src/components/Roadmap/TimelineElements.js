@@ -26,6 +26,6 @@ export const TimelineH3 = styled.h3`
 
 export const TimelineH1 = styled.h1`
   /* text-align: center; */
-
+  padding-top: 5%;
   margin: 0px 200px 0 200px;
 `;
