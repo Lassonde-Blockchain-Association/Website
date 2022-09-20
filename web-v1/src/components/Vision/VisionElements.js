@@ -5,6 +5,7 @@ export const VisionSection = styled.div`
   /* height: 100vh; */
   width: 100%;
   display: flex;
+  padding: 2%;
   flex-direction: column;
   // justify-content: center;
   background-color: #101522;
