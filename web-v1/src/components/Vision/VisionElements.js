@@ -6,32 +6,37 @@ export const VisionSection = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   background-color: #101522;
   margin-top: -5px;
+  @media screen and (max-width: 768px) {
+    height: 100%;
+  }
 `;
 export const VisionContainer = styled.div`
   color: white;
   height: 100vh;
-  /* width: 100%; */
-  /* margin: 10px 200px 50px 200px; */
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    height: 100%;
+  }
 `;
 
 export const VisionH1 = styled.h1`
-  margin-left: 200px;
-  margin-top: 5%;
+  padding: 2%;
+  padding-left: 10%;
   text-align: left;
   position: relative;
 `;
 
-export const VisionStatement = styled.h4`
-  margin: 50px 200px 50px 200px;
+export const VisionStatement = styled.h3`
+  padding: 2%;
   text-align: left;
   position: relative;
 `;
 
 export const CardContainer = styled.div`
-  height: 500px;
+  height: 250px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -44,34 +49,10 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
+    transform: scale(1.1);
   }
-`;
-
-export const CircleWrapper = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  z-index: 1;
-  border-top-right-radius: 25px;
-  /* border-botton-radius: 25px; */
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    /* cursor: pointer; */
-  }
-`;
-export const Circle = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 15em;
-  z-index: 2;
-  background-color: #ffccbc;
-  border-radius: 50%;
 `;
 
 export const TopContainer = styled.div`
@@ -86,7 +67,7 @@ export const TopContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -104,7 +85,7 @@ export const ProjectsWrapper = styled.div`
 
 export const BottomContainer = styled.div`
   display: flex;
-  flex: 0.8;
+  flex: 1;
   padding: 0 1em;
   color: black;
   z-index: 5;
