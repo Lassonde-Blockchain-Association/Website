@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
-// import { FaBars } from "react-icons/fa";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -17,6 +16,7 @@ export const Nav = styled.nav`
 `;
 
 export const NavbarContainer = styled.div`
+  font-family: "Spline Sans Mono", monospace;
   padding: 20px;
   justify-content: center;
   display: flex;

@@ -29,7 +29,8 @@ export const VisionH1 = styled.h1`
 `;
 
 export const VisionStatement = styled.h3`
-  padding: 8%;
+  font-weight: lighter;
+  padding: 4% 8% 6% 8%;
 `;
 
 export const CardContainer = styled.div`
@@ -81,6 +82,7 @@ export const ProjectsWrapper = styled.div`
 `;
 
 export const BottomContainer = styled.div`
+  margin: 20px;
   display: flex;
   flex: 1;
   padding: 0 1em;
