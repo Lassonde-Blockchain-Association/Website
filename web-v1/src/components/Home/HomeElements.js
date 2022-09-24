@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div``;
+export const HomeContainer = styled.div`
+  font-family: "Spline Sans Mono", monospace;
+`;
 
 export const Background = styled.video`
   width: 100%;

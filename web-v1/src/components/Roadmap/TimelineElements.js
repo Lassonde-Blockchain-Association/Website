@@ -11,17 +11,14 @@ export const RoadmapContainer = styled.body`
   color: rgb(53, 53, 53);
   background: grey;
   position: relative;
+  padding: 10px 0 10px 0;
+
   /* z-index: auto; */
 `;
 
-export const Background = styled.div`
-  /* background-image: url("../../images/LBC.png"); */
-  /* background-size: "cover"; */
-  /* background-color: lightgrey; */
-`;
-
 export const TimelineH3 = styled.h3`
-  padding-top: 0.25em;
+  /* padding-top: 0.25em; */
+  margin: 10px 200px 10px 200px;
 `;
 
 export const TimelineH1 = styled.h1`

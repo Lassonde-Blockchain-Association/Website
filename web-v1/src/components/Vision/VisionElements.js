@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const VisionSection = styled.div`
+  font-family: "Spline Sans Mono", monospace;
   height: 100vh;
   /* width: 100%; */
   display: flex;

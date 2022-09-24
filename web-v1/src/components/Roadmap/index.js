@@ -3,7 +3,12 @@ import { ReactComponent as WorkIcon } from "../../images/work.svg";
 import { ReactComponent as SchoolIcon } from "../../images/school.svg";
 
 import info from "./RoadmapInfo";
-import { TimelineH1, RoadmapContainer, Background } from "./TimelineElements";
+import {
+  TimelineH1,
+  RoadmapContainer,
+  Background,
+  TimelineH3,
+} from "./TimelineElements";
 
 import {
   VerticalTimeline,
@@ -21,7 +26,9 @@ const Roadmap = () => {
   return (
     <RoadmapContainer>
       {/* <Background src={img} /> */}
-      <TimelineH1 id="timeline">Roadmap</TimelineH1>
+      <TimelineH1 id="timeline">ROADMAP ACTIVATIONS</TimelineH1>
+      <TimelineH3>A University Story built for our own.</TimelineH3>
+      {/* <TimelineH3>We've set up some goals for ourselves. </TimelineH3> */}
       <VerticalTimeline>
         {info.map((element) => {
           let isWorkIcon = element.icon === "work";
