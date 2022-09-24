@@ -2,10 +2,10 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const VisionSection = styled.div`
-  /* height: 100vh; */
-  width: 100%;
+  height: 100vh;
+  /* width: 100%; */
   display: flex;
-  padding: 2%;
+  padding: 5%;
   flex-direction: column;
   // justify-content: center;
   background-color: #101522;
@@ -16,28 +16,24 @@ export const VisionSection = styled.div`
 `;
 export const VisionContainer = styled.div`
   color: white;
-  height: 100vh;
-  align-items: center;
+  margin: 0 20px 0 20px;
+  position: relative;
   @media screen and (max-width: 768px) {
     height: 100%;
   }
 `;
 
 export const VisionH1 = styled.h1`
-  padding: 2%;
-  padding-left: 10%;
-  text-align: left;
-  position: relative;
+  padding-left: 8%;
 `;
 
 export const VisionStatement = styled.h3`
-  padding: 2%;
-  text-align: left;
-  position: relative;
+  /* margin: 5%; */
+  padding: 8%;
 `;
 
 export const CardContainer = styled.div`
-  height: 250px;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;

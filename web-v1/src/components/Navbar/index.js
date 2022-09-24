@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
               duration={500}
               spy={true}
               exact="true"
-              // offset={-100}
+              offset={-80}
             >
               Vision
             </NavLink>
