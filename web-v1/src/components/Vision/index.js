@@ -20,14 +20,17 @@ const Vision = () => {
       <VisionSection>
         <VisionContainer id="vision">
           {/* <Background src={videoBg} autoPlay loop muted /> */}
-          <VisionH1>Vision</VisionH1>
+          <VisionH1>VISION</VisionH1>
           <VisionStatement>
             We want to help make the world of Web3 more accessible to everyone.
+            <br></br>
+            <br></br>
             Through this project, our goal is to create intuitive, easily
             deployable data analytics and visualisation tools that help
             translate the arcane code contained in a blockchain transaction or
             NFT smart contract into something our users can more easily
-            understand.<br></br>
+            understand.
+            <br></br>
             <br></br>
             In order to achieve this, we will need enthusiastic talent on
             multiple fronts - including but not limited to UX/UI design,
@@ -35,9 +38,11 @@ const Vision = () => {
             exciting time to learn about a burgeoning new field with limitless
             opportunities to change the world around us, and LBC offers a
             fantastic opportunity to gain this valuable early experience.
-            <br></br> <br></br> If you are interested in joining an ambitious
-            team and contributing to innovative projects with real-world
-            potential, feel free to get in touch with us!
+            <br></br>
+            <br></br>
+            If you are interested in joining an ambitious team and contributing
+            to innovative projects with real-world potential, feel free to get
+            in touch with us!
           </VisionStatement>
           <ProjectsWrapper>
             <CardContainer>

@@ -13,9 +13,12 @@
   }
 }
 
+.vertical-timeline-element-content h3 {
+  font-size: 20px;
+}
 
 #description {
-  margin: 1.5em 0 2em 0;
+  margin: 1em 0 1.5em 0;
 }
 
 .button {
@@ -26,7 +29,7 @@
 }
 
 .workButton {
-  background-color: #06d6a0;
+  background-color: #025c99;
 }
 
 /* .workButton:hover {

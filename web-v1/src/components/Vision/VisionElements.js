@@ -9,7 +9,7 @@ export const VisionSection = styled.div`
   padding: 5%;
   flex-direction: column;
   // justify-content: center;
-  background-color: #101522;
+  background-color: #121826;
   margin-top: -5px;
   @media screen and (max-width: 768px) {
     height: 100%;
@@ -29,7 +29,6 @@ export const VisionH1 = styled.h1`
 `;
 
 export const VisionStatement = styled.h3`
-  /* margin: 5%; */
   padding: 8%;
 `;
 
