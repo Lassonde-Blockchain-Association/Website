@@ -5,6 +5,7 @@ import { Link as LinkR } from "react-router-dom";
 import { FaDiscord } from "react-icons/fa";
 
 export const SidebarContainer = styled.aside`
+  font-family: "Spline Sans Mono", monospace;
   position: fixed;
   z-index: 999;
   width: 100%;

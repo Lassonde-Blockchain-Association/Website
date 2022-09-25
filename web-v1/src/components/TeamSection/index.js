@@ -15,9 +15,6 @@ const TeamSection = () => {
         <h1>Our Team</h1>
         <TeamElements.TeamBigContainer>
           <TeamElements.TeamContainer>
-            {/* 
-      First team member information
-      */}
             <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img1} />
               <TeamElements.TeamMemberDescription>
@@ -29,9 +26,6 @@ const TeamSection = () => {
               </TeamElements.TeamMemberDescription>
             </TeamElements.TeamMemberContainer>
 
-            {/* 
-      Second team member information
-      */}
             <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img2} />
               <TeamElements.TeamMemberDescription>
@@ -43,10 +37,7 @@ const TeamSection = () => {
               </TeamElements.TeamMemberDescription>
             </TeamElements.TeamMemberContainer>
 
-            {/* 
-      Third team member information
-      */}
-            <TeamElements.TeamMemberContainer className="App">
+            {/* <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img3} />
               <TeamElements.TeamMemberDescription>
                 James
@@ -55,41 +46,10 @@ const TeamSection = () => {
                 <br></br>
                 Metamask Wallet Address
               </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
+            </TeamElements.TeamMemberContainer> */}
           </TeamElements.TeamContainer>
 
-          <TeamElements.TeamContainer>
-            {/* 
-      Fourth team member information
-      */}
-            {/* <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img4} />
-              <TeamElements.TeamMemberDescription>
-                Sam
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer> */}
-
-            {/* 
-        Fifth team member information
-        */}
-            <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img5} />
-              <TeamElements.TeamMemberDescription>
-                Brian
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
-
-            {/* 
-            Sixth team member information
-            */}
+          {/* <TeamElements.TeamContainer>
             <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img6} />
               <TeamElements.TeamMemberDescription>
@@ -100,7 +60,7 @@ const TeamSection = () => {
                 Metamask Wallet Address
               </TeamElements.TeamMemberDescription>
             </TeamElements.TeamMemberContainer>
-          </TeamElements.TeamContainer>
+          </TeamElements.TeamContainer> */}
         </TeamElements.TeamBigContainer>
       </TeamElements.Team>
     </>
