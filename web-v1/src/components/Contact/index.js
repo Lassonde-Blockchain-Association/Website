@@ -8,6 +8,7 @@ import {
   TextWrapper,
   Background,
   TextContainer,
+  Icon,
 } from "./ContactElements";
 
 import {
@@ -27,6 +28,7 @@ const Contact = ({ imgStart, img }) => {
     <>
       <Container>
         <ContactWrap>
+          <Icon to="/">LBC</Icon>
           <Background src={videoBg} autoPlay loop muted />
           <TextContainer>
             <TextWrapper>

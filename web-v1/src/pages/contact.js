@@ -7,7 +7,7 @@ import Home from "../components/Home";
 const ContactPage = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Home /> */}
       <Contact />
       <Footer />

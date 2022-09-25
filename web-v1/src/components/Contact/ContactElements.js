@@ -5,15 +5,37 @@ export const Container = styled.div`
   font-family: "Spline Sans Mono", monospace;
   justify-content: center;
   width: 100%;
+  min-height: 692px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  /* overflow: hidden; */
   /* min-height: 100vh;
   background: #e6f0ed; */
   /* margin-left: auto;
   margin-right: auto; */
 `;
+export const Icon = styled(Link)`
+  margin-left: 32px;
+  margin-top: 32px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+
+  @media screen and (max-width: 480px) {
+    margin-left: 16px;
+    margin-top: 16px;
+  }
+`;
 export const Background = styled.video`
   width: 100%;
   height: 100vh;
-  margin-top: -60px;
+  /* margin-top: -60px; */
+  padding-top: -60px;
   z-index: 0;
   background-size: cover;
   background-color: black;
