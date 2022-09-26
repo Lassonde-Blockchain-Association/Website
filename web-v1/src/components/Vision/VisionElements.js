@@ -11,7 +11,7 @@ export const VisionSection = styled.div`
   // justify-content: center;
   background-color: #121826;
   margin-top: -5px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     height: 100%;
   }
 `;
@@ -19,7 +19,7 @@ export const VisionContainer = styled.div`
   color: white;
   margin: 0 20px 0 20px;
   position: relative;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     height: 100%;
   }
 `;
@@ -75,7 +75,7 @@ export const ProjectsWrapper = styled.div`
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }

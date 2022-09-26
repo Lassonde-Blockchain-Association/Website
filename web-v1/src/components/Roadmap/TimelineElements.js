@@ -2,23 +2,25 @@ import styled from "styled-components";
 
 export const RoadmapSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
-  width: 100%;
-  height: 120%;
+  /* width: 100%; */
+  height: 100%;
   background: DarkGray;
   position: relative;
-  /* margin: 20px; */
+  padding: 5%;
 `;
+
 export const RoadmapContainer = styled.div`
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
 `;
+
 export const TimelineH1 = styled.h1`
-  padding-top: 5%;
-  margin: 0px 200px 0 200px;
+  padding-left: 8%;
 `;
+
 export const TimelineH3 = styled.h3`
-  margin: 10px 200px 10px 200px;
+  font-weight: lighter;
+  padding: 0 8% 6% 8%;
 `;
 
 // .vertical-timeline-element-content {
