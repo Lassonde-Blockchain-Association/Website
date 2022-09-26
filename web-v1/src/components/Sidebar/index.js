@@ -22,13 +22,13 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="home" onClick={toggle}>
+          <SidebarLink to="home" onClick={toggle} offset={-50}>
             Home
           </SidebarLink>
-          <SidebarLink to="vision" onClick={toggle}>
+          <SidebarLink to="vision" onClick={toggle} offset={-120}>
             Vision
           </SidebarLink>
-          <SidebarLink to="timeline" onClick={toggle}>
+          <SidebarLink to="timeline" onClick={toggle} offset={-80}>
             Roadmap
           </SidebarLink>
         </SidebarMenu>
