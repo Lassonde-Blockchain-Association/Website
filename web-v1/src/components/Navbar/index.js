@@ -91,6 +91,18 @@ const Navbar = ({ toggle }) => {
                 Roadmap
               </NavLink>
             </NavItem>
+            {/* <NavItem>
+              <NavLink
+                to="team"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={25}
+              >
+                Team
+              </NavLink>
+            </NavItem> */}
             {/* <NavLink to="/sign-up" activeStyle>
             Contents
           </NavLink> */}

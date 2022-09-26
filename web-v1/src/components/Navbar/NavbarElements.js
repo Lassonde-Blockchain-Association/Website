@@ -22,6 +22,7 @@ export const Nav = styled.nav`
   transition: ${({ scrollNav }) =>
     scrollNav ? "all 0.3s ease-in-out" : "none"};
   transition: 0.3s all ease;
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -34,7 +35,7 @@ export const NavbarContainer = styled.div`
   height: 120px;
   z-index: 1;
   width: 100%;
-  padding: 0 24px;
+  /* padding: 0 24px; */
   max-width: 1100px;
 `;
 
@@ -82,6 +83,8 @@ export const NavMenu = styled.div`
   /* padding: 0 10% 0 10%;
   display: flex;
   align-items: center; */
+  padding-left: 10%;
+
   display: flex;
   align-items: center;
   list-style: none;
@@ -102,6 +105,7 @@ export const NavLink = styled(LinkS)`
   display: flex;
   text-decoration: none;
   padding: 0 1.2rem;
+  /* padding: */
   cursor: pointer;
 
   &:hover {

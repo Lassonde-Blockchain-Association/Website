@@ -8,10 +8,9 @@ import {
   TeamH1,
 } from "./TeamElements";
 
-import img1 from "./images/img1.jpeg";
-import img2 from "./images/img2.jpeg";
-import img3 from "./images/img3.jpeg";
-import img4 from "./images/img4.jpeg";
+import samson from "./images/mom.jpg";
+import qaung from "./images/qaung.jpg";
+import james from "./images/james.jpg";
 import img5 from "./images/img5.png";
 import img6 from "./images/img6.jpeg";
 
@@ -28,7 +27,7 @@ const TeamSection = () => {
               <br></br>
               Founder
             </TeamMemberDescription>
-            <TeamMemberPhoto src={img1} />
+            <TeamMemberPhoto src={samson} />
           </TeamMemberContainer>
 
           <TeamMemberContainer className="App">
@@ -37,19 +36,17 @@ const TeamSection = () => {
               <br></br>
               Head of Development
             </TeamMemberDescription>
-            <TeamMemberPhoto src={img2} />
+            <TeamMemberPhoto src={qaung} />
           </TeamMemberContainer>
 
-          {/* <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img3} />
-              <TeamElements.TeamMemberDescription>
-                James
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer> */}
+          <TeamMemberContainer className="App">
+            <TeamMemberDescription>
+              James
+              <br></br>
+              Software Engineer
+            </TeamMemberDescription>
+            <TeamMemberPhoto src={james} />
+          </TeamMemberContainer>
         </TeamContainer>
 
         {/* <TeamElements.TeamContainer>

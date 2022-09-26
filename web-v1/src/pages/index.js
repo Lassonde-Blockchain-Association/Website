@@ -22,7 +22,7 @@ const Main = () => {
       <Home />
       <Vision />
       <Roadmap />
-      <TeamSection />
+      {/* <TeamSection /> */}
       <Footer />
     </>
   );
