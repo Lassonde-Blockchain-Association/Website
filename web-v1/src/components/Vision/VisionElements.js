@@ -4,12 +4,10 @@ import { motion } from "framer-motion";
 export const VisionSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
   height: 100vh;
-  /* width: 100%; */
   display: flex;
   padding: 5%;
   flex-direction: column;
-  // justify-content: center;
-  background-color: #121826;
+  background-color: #182033;
   margin-top: -5px;
   @media screen and (max-width: 960px) {
     height: 100%;
@@ -41,7 +39,7 @@ export const CardContainer = styled.div`
   border-radius: 25px;
   z-index: 0;
   box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
-  background-color: #77a6f7;
+  background-color: #bbd2fb;
   color: #fff;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr;

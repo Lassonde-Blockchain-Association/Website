@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to="vision" onClick={toggle} offset={-120}>
             Vision
           </SidebarLink>
-          <SidebarLink to="timeline" onClick={toggle} offset={-80}>
+          <SidebarLink to="timeline" onClick={toggle} offset={-130}>
             Roadmap
           </SidebarLink>
         </SidebarMenu>

@@ -8,15 +8,50 @@ transition css
 */
 
 export const Team = styled.div`
-  /* font-family: "Spline Sans Mono", monospace;
-  letter-spacing: -1px; */
-  margin: 100px 200px 0 200px;
+  font-family: "Spline Sans Mono", monospace;
+  /* letter-spacing: -1px; */
+  /* margin: 100px 200px 0 200px; */
   height: 100vh;
+  padding: 5%;
+  margin-top: -5px;
+  background-color: #e2e7f1;
+`;
+
+export const TeamContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  color: #f5f5f5;
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: 10px 10px; */
+  }
+`;
+export const TeamH1 = styled.h1`
+  padding-left: 8%;
+`;
+
+export const TeamMemberContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  width: 300px;
+  height: 300px;
 `;
 
 export const TeamMemberPhoto = styled.img`
-  height: 150px;
-  width: 150px;
+  height: 250px;
+  width: 250px;
   border-radius: 25px;
   padding: 10px;
   align-self: center;
@@ -27,48 +62,13 @@ export const TeamMemberPhoto = styled.img`
     background-color: #fff;
   }
   @media only screen and (max-width: 600px) {
-    height: 150px;
-    width: 150px;
+    height: 250px;
+    width: 250px;
   }
-`;
-
-export const TeamBigContainer = styled.div`
-  margin: 60px;
-`;
-
-export const TeamContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-  @media only screen and (max-width: 600px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px 10px;
-  }
-`;
-
-export const TeamMemberContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  border: 1px solid black;
-  border-radius: 5px;
-  background-color: #f5f5f5;
-  width: 300px;
-  height: 300px;
 `;
 
 export const TeamMemberDescription = styled.p`
-  display: flex;
-  margin-top: 10px;
-  margin-left: 10px;
-  font-size: 14px;
+  text-align: center;
   font-weight: bold;
   color: #000;
 `;
