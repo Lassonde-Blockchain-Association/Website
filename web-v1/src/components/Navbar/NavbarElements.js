@@ -48,6 +48,7 @@ export const NavLogo = styled(Link)`
   align-items: center;
   font-weight: bold;
   text-decoration: none;
+  padding-left: 5%;
 `;
 export const MobileIcon = styled.div`
   display: none;
@@ -84,7 +85,7 @@ export const NavMenu = styled.div`
   display: flex;
   align-items: center; */
   padding-left: 10%;
-
+  padding-right: 10;
   display: flex;
   align-items: center;
   list-style: none;
@@ -115,7 +116,7 @@ export const NavLink = styled(LinkS)`
 export const NavBtn = styled.nav`
   align-items: center;
   display: flex;
-
+  padding-right: 5%;
   @media screen and (max-width: 960px) {
     display: none;
   }
