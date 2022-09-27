@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import {
   VisionSection,
@@ -13,8 +15,12 @@ import {
   Background,
 } from "./VisionElements";
 import videoBg from "../../video/bc3.mp4";
+import { useEffect } from "react";
 
 const Vision = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <VisionSection>
@@ -45,7 +51,7 @@ const Vision = () => {
             in touch with us!
           </VisionStatement>
           <ProjectsWrapper>
-            <CardContainer>
+            <CardContainer data-aos="zoom-in">
               <TopContainer>
                 <CardText>Curiosity</CardText>
               </TopContainer>
@@ -55,7 +61,7 @@ const Vision = () => {
               </BottomContainer>
             </CardContainer>
 
-            <CardContainer>
+            <CardContainer data-aos="zoom-in">
               <TopContainer>
                 <CardText>Execution</CardText>
               </TopContainer>
@@ -65,7 +71,7 @@ const Vision = () => {
               </BottomContainer>
             </CardContainer>
 
-            <CardContainer>
+            <CardContainer data-aos="zoom-in">
               <TopContainer>
                 <CardText>Communication</CardText>
               </TopContainer>
@@ -75,7 +81,7 @@ const Vision = () => {
               </BottomContainer>
             </CardContainer>
 
-            <CardContainer>
+            <CardContainer data-aos="zoom-in">
               <TopContainer>
                 <CardText>Reflection</CardText>
               </TopContainer>

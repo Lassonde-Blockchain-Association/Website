@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
 export const VisionSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
