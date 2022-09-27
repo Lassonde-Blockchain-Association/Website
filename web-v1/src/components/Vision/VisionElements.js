@@ -9,7 +9,7 @@ export const VisionSection = styled.div`
   flex-direction: column;
   background-color: #182033;
   margin-top: -5px;
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1200px) {
     height: 100%;
   }
 `;
@@ -17,6 +17,7 @@ export const VisionContainer = styled.div`
   color: white;
   margin: 0 20px 0 20px;
   position: relative;
+
   @media screen and (max-width: 960px) {
     height: 100%;
   }
