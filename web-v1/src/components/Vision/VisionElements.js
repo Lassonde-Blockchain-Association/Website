@@ -3,24 +3,27 @@ import { motion } from "framer-motion";
 
 export const VisionSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
-  height: 90vh;
+  /* height: 90vh; */
+  height: 100%;
+
   display: flex;
   padding: 5%;
   flex-direction: column;
   background-color: #182033;
   margin-top: -5px;
-  @media screen and (max-width: 1200px) {
+  /* @media screen and (max-width: 1200px) {
     height: 100%;
-  }
+  } */
 `;
 export const VisionContainer = styled.div`
   color: white;
   margin: 0 20px 0 20px;
   position: relative;
+  height: 100%;
 
-  @media screen and (max-width: 960px) {
+  /* @media screen and (max-width: 960px) {
     height: 100%;
-  }
+  } */
 `;
 
 export const VisionH1 = styled.h1`
@@ -49,6 +52,7 @@ export const CardContainer = styled.div`
     transition: all 0.4s ease-in-out;
     cursor: pointer;
     transform: scale(1.1);
+    background-color: #6f92cd;
   }
 `;
 
@@ -71,7 +75,8 @@ export const ProjectsWrapper = styled.div`
   align-items: center;
   grid-gap: 26px;
   padding: 0 50px;
-  @media screen and (max-width: 1200px) {
+
+  @media screen and (max-width: 1600px) {
     grid-template-columns: 1fr 1fr;
   }
   @media screen and (max-width: 960px) {

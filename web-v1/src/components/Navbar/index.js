@@ -74,7 +74,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-75}
+                offset={-100}
               >
                 Vision
               </NavLink>
@@ -86,7 +86,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-95}
+                offset={-90}
               >
                 Roadmap
               </NavLink>
