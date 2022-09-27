@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const VisionSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   padding: 5%;
   flex-direction: column;
@@ -71,7 +71,7 @@ export const ProjectsWrapper = styled.div`
   align-items: center;
   grid-gap: 26px;
   padding: 0 50px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1200px) {
     grid-template-columns: 1fr 1fr;
   }
   @media screen and (max-width: 960px) {
