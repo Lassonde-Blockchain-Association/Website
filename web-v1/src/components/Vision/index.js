@@ -12,20 +12,17 @@ import {
   ProjectsWrapper,
   TopContainer,
   BottomContainer,
-  Background,
 } from "./VisionElements";
-import videoBg from "../../video/bc3.mp4";
 import { useEffect } from "react";
 
 const Vision = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 500 });
   }, []);
   return (
     <>
       <VisionSection>
         <VisionContainer id="vision">
-          {/* <Background src={videoBg} autoPlay loop muted /> */}
           <VisionH1>VISION</VisionH1>
           <VisionStatement>
             We want to help make the world of Web3 more accessible to everyone.
@@ -50,8 +47,8 @@ const Vision = () => {
             to innovative projects with real-world potential, feel free to get
             in touch with us!
           </VisionStatement>
-          <ProjectsWrapper>
-            <CardContainer data-aos="zoom-in">
+          <ProjectsWrapper data-aos="fade-right">
+            <CardContainer>
               <TopContainer>
                 <CardText>Curiosity</CardText>
               </TopContainer>
@@ -61,7 +58,7 @@ const Vision = () => {
               </BottomContainer>
             </CardContainer>
 
-            <CardContainer data-aos="zoom-in">
+            <CardContainer>
               <TopContainer>
                 <CardText>Execution</CardText>
               </TopContainer>
@@ -71,7 +68,7 @@ const Vision = () => {
               </BottomContainer>
             </CardContainer>
 
-            <CardContainer data-aos="zoom-in">
+            <CardContainer>
               <TopContainer>
                 <CardText>Communication</CardText>
               </TopContainer>
@@ -81,7 +78,7 @@ const Vision = () => {
               </BottomContainer>
             </CardContainer>
 
-            <CardContainer data-aos="zoom-in">
+            <CardContainer>
               <TopContainer>
                 <CardText>Reflection</CardText>
               </TopContainer>
