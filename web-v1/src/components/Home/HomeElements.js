@@ -12,6 +12,7 @@ export const Background = styled.video`
   background-size: cover;
   background-color: black;
   filter: brightness(60%);
+  background-position: center top;
 `;
 
 export const MapBox = styled.div`

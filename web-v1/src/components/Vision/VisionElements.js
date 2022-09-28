@@ -38,7 +38,7 @@ export const CardContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   &:hover {
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
     transform: scale(1.1);
     background-color: #a8bde1;

@@ -9,26 +9,36 @@ import {
   Background,
   TextContainer,
   Icon,
+  ContactNav,
+  NavBtn,
+  NavBtnLink,
+  Discordbutton,
+  Discord,
 } from "./ContactElements";
 
-import {
-  FaMailBulk,
-  FaGithub,
-  FaLinkedin,
-  FaDiscord,
-  FaYoutube,
-  FaFacebook,
-  FaInstagram,
-  FaPencilAlt,
-} from "react-icons/fa";
+import { FaMailBulk, FaGithub, FaPencilAlt, FaDiscord } from "react-icons/fa";
 import videoBg from "../../video/bc2.mp4";
+import Navbar from "../Navbar";
 
-const Contact = ({ imgStart, img }) => {
+const Contact = () => {
   return (
     <>
       <Container>
-        <ContactWrap>
+        {/* <ContactNav>
           <Icon to="/">LBC</Icon>
+          <NavBtn>
+            <NavBtnLink to="/contact">Contact Us</NavBtnLink>
+
+            <Discordbutton href="https://discord.gg/JuCmutKUFM">
+              <Discord>
+                <FaDiscord />
+              </Discord>
+              Discord
+            </Discordbutton>
+          </NavBtn>
+        </ContactNav> */}
+
+        <ContactWrap>
           <Background src={videoBg} autoPlay loop muted />
           <TextContainer>
             <TextWrapper>
