@@ -2,76 +2,58 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const VisionSection = styled.div`
-  /* height: 100vh; */
-  width: 100%;
+  font-family: "Spline Sans Mono", monospace;
+  /* height: 90vh; */
+  height: 100%;
+
   display: flex;
+  padding: 5%;
   flex-direction: column;
-  justify-content: center;
-  background-color: #101522;
+  background-color: #182033;
   margin-top: -5px;
+  /* @media screen and (max-width: 1200px) {
+    height: 100%;
+  } */
 `;
 export const VisionContainer = styled.div`
   color: white;
-  height: 100vh;
-  /* width: 100%; */
-  /* margin: 10px 200px 50px 200px; */
+  margin: 0 20px 0 20px;
+  position: relative;
+  height: 100%;
+
+  /* @media screen and (max-width: 960px) {
+    height: 100%;
+  } */
 `;
 
 export const VisionH1 = styled.h1`
-  margin-left: 100px;
-  margin-top: 10%;
-  text-align: left;
-  position: relative;
+  padding-left: 8%;
 `;
 
-export const VisionStatement = styled.h2`
-  margin: 50px 200px 50px 200px;
-  text-align: left;
-  position: relative;
+export const VisionStatement = styled.h3`
+  font-weight: lighter;
+  padding: 4% 8% 6% 8%;
 `;
 
 export const CardContainer = styled.div`
-  height: 500px;
+  height: 300px;
   width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
   z-index: 0;
   box-shadow: 0 2px 7px 1px rgba(31, 31, 31, 0.2);
-  background-color: #77a6f7;
+  background-color: #bbd2fb;
   color: #fff;
   position: relative;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
     cursor: pointer;
+    transform: scale(1.1);
+    background-color: #6f92cd;
   }
-`;
-
-export const CircleWrapper = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  z-index: 1;
-  border-top-right-radius: 25px;
-  /* border-botton-radius: 25px; */
-  &:hover {
-    transition: all 0.2s ease-in-out;
-    /* cursor: pointer; */
-  }
-`;
-export const Circle = styled.div`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 15em;
-  z-index: 2;
-  background-color: #ffccbc;
-  border-radius: 50%;
 `;
 
 export const TopContainer = styled.div`
@@ -86,25 +68,27 @@ export const TopContainer = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 26px;
   padding: 0 50px;
-  @media screen and (max-width: 1000px) {
+
+  @media screen and (max-width: 1600px) {
     grid-template-columns: 1fr 1fr;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
 `;
 
 export const BottomContainer = styled.div`
+  margin: 20px;
   display: flex;
-  flex: 0.8;
+  flex: 1;
   padding: 0 1em;
   color: black;
   z-index: 5;

@@ -1,24 +1,14 @@
 import React from "react";
 import {
-  Icon,
   ContactH1,
   ContactWrap,
   Container,
   Text,
   ContactLink,
-  InfoRow,
-  ImgWrap,
-  Img,
-  Column1,
-  Column2,
   TextWrapper,
-  SocialMediaRow,
-  SocialMediaColumn,
-  Circle,
-  SocialIcons,
-  SocialIconLink,
-  HorizontalLine,
-  VerticalLine,
+  Background,
+  TextContainer,
+  Icon,
 } from "./ContactElements";
 
 import {
@@ -29,92 +19,61 @@ import {
   FaYoutube,
   FaFacebook,
   FaInstagram,
+  FaPencilAlt,
 } from "react-icons/fa";
+import videoBg from "../../video/bc2.mp4";
 
 const Contact = ({ imgStart, img }) => {
   return (
     <>
       <Container>
         <ContactWrap>
-          <Icon to="/">Lassonde Blockchain</Icon>
+          <Icon to="/">LBC</Icon>
+          <Background src={videoBg} autoPlay loop muted />
+          <TextContainer>
+            <TextWrapper>
+              <ContactH1>Contact us</ContactH1>
+              <ContactH1>General Inquiries</ContactH1>
 
-          <InfoRow imgStart={imgStart}>
-            {/* left side */}
-            <Column1>
-              <TextWrapper>
-                <ContactH1>Contact us</ContactH1>
-                <ContactH1>General Inquiries</ContactH1>
+              <Text>
+                Lassonde Blockchain’s mission is to create a community of
+                blockchain innovators at York University. Feel free to reach out
+                to us by email below:
+              </Text>
 
-                <Text>
-                  Lassonde Blockchain’s mission is to create a community of
-                  blockchain innovators at York University. Feel free to reach
-                  out to us by email below:
-                </Text>
+              <ContactLink href="mailto:lassondeblockchain@gmail.com">
+                <FaMailBulk /> lassondeblockchain@gmail.com
+              </ContactLink>
 
-                <ContactLink>
-                  {" "}
-                  <a href="mailto:lassondeblockchain@gmail.com">
-                    <FaMailBulk /> lassondeblockchain@gmail.com
-                  </a>{" "}
-                </ContactLink>
+              <ContactH1>Joining Our Club</ContactH1>
 
-                <ContactH1>For Code/Networking Geeks</ContactH1>
+              <Text>
+                Feel free to sign up to become a member via the Google Form
+                below! It takes only 3 minutes to fill out and the information
+                will help us make the most of our journey together. You can also
+                stay up to date with us by joining our Discord server --
+                non-official members are also welcome!
+              </Text>
 
-                <Text>
-                  If you would like take a backstage tour of our website, feel
-                  free to browse its code on GitHub. It is built using React and
-                  styled components.
-                </Text>
-                <ContactLink>
-                  <a href="https://github.com/Lassonde-Blockchain-Club">
-                    <FaGithub /> Lassonde-Blockchain-Club{" "}
-                  </a>
-                </ContactLink>
-                {/* <ContactLink>
+              <ContactLink href="https://forms.gle/mA3g2T4SzV5JKrkbA">
+                <FaPencilAlt /> Member Sign Up
+              </ContactLink>
+
+              <ContactH1>For Code Geeks</ContactH1>
+
+              <Text>
+                If you would like take a backstage tour of our website, feel
+                free to browse its code on GitHub. It is built using React and
+                styled components.
+              </Text>
+              <ContactLink href="https://github.com/Lassonde-Blockchain-Club">
+                <FaGithub /> Lassonde-Blockchain-Club
+              </ContactLink>
+              {/* <ContactLink>
                   <FaLinkedin /> Lassonde Blockchain Club
                 </ContactLink> */}
-              </TextWrapper>
-            </Column1>
-
-            {/* right side */}
-            {/* find a img/drawing */}
-            <Column2>
-              <InfoRow imgStart={imgStart}>
-                {/* <Column1> */}
-                <Circle>
-                  <SocialIcons>
-                    <SocialIconLink href="" target="" aria-label="Discord">
-                      <FaDiscord />
-                    </SocialIconLink>
-                  </SocialIcons>
-                </Circle>
-                <Circle>
-                  <SocialIcons>
-                    <SocialIconLink href="" target="" aria-label="Instagram">
-                      <FaInstagram />
-                    </SocialIconLink>
-                  </SocialIcons>
-                </Circle>
-                {/* </Column1> */}
-                {/* <Column2> */}
-                <Circle>
-                  <SocialIcons>
-                    <SocialIconLink href="" target="" aria-label="Facebook">
-                      <FaFacebook />
-                    </SocialIconLink>
-                  </SocialIcons>
-                </Circle>
-                <Circle>
-                  <SocialIcons>
-                    <SocialIconLink href="" target="" aria-label="YouTube">
-                      <FaYoutube />
-                    </SocialIconLink>
-                  </SocialIcons>
-                </Circle>
-                {/* </Column2> */}
-              </InfoRow>
-            </Column2>
-          </InfoRow>
+            </TextWrapper>
+          </TextContainer>
         </ContactWrap>
       </Container>
     </>

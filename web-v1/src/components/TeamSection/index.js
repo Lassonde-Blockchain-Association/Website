@@ -1,95 +1,55 @@
 import React from "react";
-import * as TeamElements from "./TeamElements";
+import {
+  Team,
+  TeamContainer,
+  TeamMemberContainer,
+  TeamMemberPhoto,
+  TeamMemberDescription,
+  TeamH1,
+} from "./TeamElements";
 
-import img1 from "./images/img1.jpeg";
-import img2 from "./images/img2.jpeg";
-import img3 from "./images/img3.jpeg";
-import img4 from "./images/img4.jpeg";
+import samson from "./images/mom.jpg";
+import qaung from "./images/qaung.jpg";
+import james from "./images/james.jpg";
 import img5 from "./images/img5.png";
 import img6 from "./images/img6.jpeg";
 
 const TeamSection = () => {
   return (
     <>
-      <TeamElements.Team id="team">
-        <h1>Our Team</h1>
-        <TeamElements.TeamBigContainer>
-          <TeamElements.TeamContainer>
-            {/* 
-      First team member information
-      */}
-            <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img1} />
-              <TeamElements.TeamMemberDescription>
-                Samson Chan
-                <br></br>
-                Co-Founder and Product Manager
-                <br></br>
-                0x5EFB44eD50fC56F957E06C5c...
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
+      <Team id="team">
+        <TeamH1>OUR TEAM</TeamH1>
 
-            {/* 
-      Second team member information
-      */}
-            <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img2} />
-              <TeamElements.TeamMemberDescription>
-                Quang
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
+        <TeamContainer>
+          <TeamMemberContainer className="App">
+            <TeamMemberDescription>
+              Samson Chan
+              <br></br>
+              Founder
+            </TeamMemberDescription>
+            <TeamMemberPhoto src={samson} />
+          </TeamMemberContainer>
 
-            {/* 
-      Third team member information
-      */}
-            <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img3} />
-              <TeamElements.TeamMemberDescription>
-                James
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
-          </TeamElements.TeamContainer>
+          <TeamMemberContainer className="App">
+            <TeamMemberDescription>
+              Quang Le
+              <br></br>
+              Head of Development
+            </TeamMemberDescription>
+            <TeamMemberPhoto src={qaung} />
+          </TeamMemberContainer>
 
-          <TeamElements.TeamContainer>
-            {/* 
-      Fourth team member information
-      */}
-            {/* <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img4} />
-              <TeamElements.TeamMemberDescription>
-                Sam
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer> */}
+          <TeamMemberContainer className="App">
+            <TeamMemberDescription>
+              James
+              <br></br>
+              Software Engineer
+            </TeamMemberDescription>
+            <TeamMemberPhoto src={james} />
+          </TeamMemberContainer>
+        </TeamContainer>
 
-            {/* 
-        Fifth team member information
-        */}
-            <TeamElements.TeamMemberContainer className="App">
-              <TeamElements.TeamMemberPhoto src={img5} />
-              <TeamElements.TeamMemberDescription>
-                Brian
-                <br></br>
-                Co-founder
-                <br></br>
-                Metamask Wallet Address
-              </TeamElements.TeamMemberDescription>
-            </TeamElements.TeamMemberContainer>
-
-            {/* 
-            Sixth team member information
-            */}
+        {/* <TeamElements.TeamContainer>
             <TeamElements.TeamMemberContainer className="App">
               <TeamElements.TeamMemberPhoto src={img6} />
               <TeamElements.TeamMemberDescription>
@@ -100,9 +60,8 @@ const TeamSection = () => {
                 Metamask Wallet Address
               </TeamElements.TeamMemberDescription>
             </TeamElements.TeamMemberContainer>
-          </TeamElements.TeamContainer>
-        </TeamElements.TeamBigContainer>
-      </TeamElements.Team>
+          </TeamElements.TeamContainer> */}
+      </Team>
     </>
   );
 };

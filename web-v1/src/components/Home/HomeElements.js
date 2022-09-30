@@ -1,28 +1,23 @@
 import styled from "styled-components";
 
 export const HomeContainer = styled.div`
-  width: 100%;
-  /* height: 105vh; */
-  height: 100%;
-
-  /* margin-top: -65px; */
+  font-family: "Spline Sans Mono", monospace;
 `;
 
 export const Background = styled.video`
-  /* margin: 0px; */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-top: -60px;
-  /* object-fit: contain; */
   z-index: 0;
   background-size: cover;
+  background-color: black;
   filter: brightness(60%);
 `;
 
 export const MapBox = styled.div`
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -31,11 +26,7 @@ export const MapBox = styled.div`
   color: white;
 `;
 
-export const MapH1 = styled.h1`
-  /* font-size: 40px; */
-  /* text-align: center; */
-`;
+export const MapH1 = styled.h1``;
 export const MapP = styled.p`
-  /* font-size: 16px;
-  text-align: center; */
+  padding: 0% 10%;
 `;

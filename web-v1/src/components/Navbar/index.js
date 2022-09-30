@@ -1,6 +1,7 @@
 //rafce
 import React, { useState, useEffect } from "react";
-// import {
+// import { HiBars3BottomRight } from "react-icons/hi2";
+import { FaBoxes, FaDiscord } from "react-icons/fa";
 import {
   Nav,
   NavLogo,
@@ -10,6 +11,9 @@ import {
   NavMenu,
   NavbarContainer,
   Discordbutton,
+  MobileIcon,
+  NavItem,
+  Discord,
 } from "./NavbarElements";
 
 import { animateScroll as scroll } from "react-scroll";
@@ -33,18 +37,6 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", updateNav);
   }, []);
 
-  // const showButton = () => {
-  //   if (window, innerWidth <= 960) {
-  //     setButton(false);
-  //   } else {
-  //     setButton(true);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   showButton();
-  // }, []);
-
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -55,51 +47,74 @@ const Navbar = ({ toggle }) => {
           <NavLogo to="/" onClick={toggleHome}>
             LBC
           </NavLogo>
-          <NavMenu>
-            <NavLink
-              // to="home"
-              smooth={true}
-              duration={500}
-              spy={true}
-              // exact="true"
-              // offset={-75}
-              to="/"
-              onClick={toggleHome}
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="vision"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              // offset={-100}
-            >
-              Vision
-            </NavLink>
-            {/* <NavLink to="/services" activeStyle>
-            Terms */}
-            {/* </NavLink> */}
-            <NavLink
-              to="timeline"
-              smooth={true}
-              duration={500}
-              spy={true}
-              exact="true"
-              // offset={-100}
-            >
-              Roadmap
-            </NavLink>
 
+          <MobileIcon onClick={toggle}>
+            <FaBoxes />
+          </MobileIcon>
+
+          <NavMenu>
+            <NavItem>
+              <NavLink
+                // to="home"
+                smooth={true}
+                duration={500}
+                spy={true}
+                // exact="true"
+                // offset={-75}
+                to="/"
+                onClick={toggleHome}
+              >
+                Home
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                to="vision"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-100}
+              >
+                Vision
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                to="timeline"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-90}
+              >
+                Roadmap
+              </NavLink>
+            </NavItem>
+            {/* <NavItem>
+              <NavLink
+                to="team"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={25}
+              >
+                Team
+              </NavLink>
+            </NavItem> */}
             {/* <NavLink to="/sign-up" activeStyle>
             Contents
           </NavLink> */}
           </NavMenu>
+
           <NavBtn>
             <NavBtnLink to="/contact">Contact Us</NavBtnLink>
 
             <Discordbutton href="https://discord.gg/JuCmutKUFM">
+              <Discord>
+                <FaDiscord />
+              </Discord>
               Discord
             </Discordbutton>
           </NavBtn>
