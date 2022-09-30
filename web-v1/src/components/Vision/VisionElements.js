@@ -2,12 +2,15 @@ import styled from "styled-components";
 
 export const VisionSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
-  height: 100%;
+  height: 90vh;
   display: flex;
   padding: 5%;
   flex-direction: column;
   background-color: #182033;
   margin-top: -5px;
+  @media screen and (max-width: 1500px) {
+    height: 100%;
+  }
 `;
 export const VisionContainer = styled.div`
   color: white;
