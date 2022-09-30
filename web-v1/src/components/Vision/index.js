@@ -22,14 +22,23 @@ const Vision = () => {
           {/* <Background src={videoBg} autoPlay loop muted /> */}
           <VisionH1>VISION</VisionH1>
           <VisionStatement>
-
-            We want to help make the world of Web3 more accessible to everyone. Our goal is to help make the complicated code contained in a blockchain transaction or NFT smart contract into something our users can more easily understand.<br></br>
+            We want to help make the world of Web3 more accessible to everyone.
             <br></br>
-
-            We're looking for enthusiastic talent on multiple fronts - including but not limited to UX/UI design, marketing, web/software development. This is an exciting time to learn about a exciting new field with limitless opportunities to change the world around us!
-
-            <br></br> <br></br> If you are interested in joining an ambitious team and contributing to innovative projects with real-world potential, feel free to get in touch!
-
+            <br></br>
+            Our goal is to help make the complicated code contained in a
+            blockchain transaction or NFT smart contract into something our
+            users can more easily understand.
+            <br></br>
+            <br></br>
+            We're looking for enthusiastic talent on multiple fronts - including
+            but not limited to UX/UI design, marketing, web/software
+            development. This is an exciting time to learn about a exciting new
+            field with limitless opportunities to change the world around us!
+            <br></br>
+            <br></br>
+            If you are interested in joining an ambitious team and contributing
+            to innovative projects with real-world potential, feel free to get
+            in touch!
           </VisionStatement>
           <ProjectsWrapper>
             <CardContainer>
