@@ -44,7 +44,7 @@ export const CardContainer = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     transform: scale(1.1);
-    background-color: #a8bde1;
+    background-color: #6f92cd;
   }
 `;
 
