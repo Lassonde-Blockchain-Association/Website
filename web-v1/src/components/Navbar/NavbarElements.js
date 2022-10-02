@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import { NavLink as Link } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
-import { FaBoxes, FaDiscord } from "react-icons/fa";
-import { icons } from "react-icons/lib";
+import { FaDiscord } from "react-icons/fa";
 
 export const Nav = styled.nav`
   font-family: "Spline Sans Mono", monospace;

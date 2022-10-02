@@ -17,7 +17,7 @@ import {
 
 import "react-vertical-timeline-component/style.min.css";
 
-import img from "../../images/LBC.png";
+// import img from "../../images/LBC.png";
 
 const Roadmap = () => {
   let workIconStyles = { background: "#025c99" };
@@ -35,10 +35,10 @@ const Roadmap = () => {
           <VerticalTimeline>
             {info.map((element) => {
               let isWorkIcon = element.icon === "work";
-              let showButton =
-                element.buttonText !== undefined &&
-                element.buttonText !== null &&
-                element.buttonText !== "";
+              // let showButton =
+              //   element.buttonText !== undefined &&
+              //   element.buttonText !== null &&
+              //   element.buttonText !== "";
 
               return (
                 <VerticalTimelineElement

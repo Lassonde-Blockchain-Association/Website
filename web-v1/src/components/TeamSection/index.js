@@ -11,8 +11,8 @@ import {
 import samson from "./images/mom.jpg";
 import qaung from "./images/qaung.jpg";
 import james from "./images/james.jpg";
-import img5 from "./images/img5.png";
-import img6 from "./images/img6.jpeg";
+// import img5 from "./images/img5.png";
+// import img6 from "./images/img6.jpeg";
 
 const TeamSection = () => {
   return (

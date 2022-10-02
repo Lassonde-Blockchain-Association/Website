@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Home from "../components/Home";
 import Roadmap from "../components/Roadmap";
-import TeamSection from "../components/TeamSection";
+// import TeamSection from "../components/TeamSection";
 import Footer from "../components/Footer";
 import Vision from "../components/Vision";
 // import { Router } from 'react-router-dom';

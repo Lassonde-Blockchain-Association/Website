@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { HomeContainer, MapBox, MapH1, MapP, Background } from "./HomeElements";
 import videoBg from "../../video/bc2.mp4";
 

@@ -19,7 +19,7 @@ import {
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
-  const [click, setClick] = useState(false);
+  // const [click, setClick] = useState(false);
   // const [button, setButton] = useState(true);
   const [scrollNav, setScrollNav] = useState(false);
 

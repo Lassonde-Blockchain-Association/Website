@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
-import { FaBoxes, FaDiscord } from "react-icons/fa";
+// import { Link } from "react-router-dom";
+// import { FaBoxes, FaDiscord } from "react-icons/fa";
 
 export const Container = styled.div`
   font-family: "Spline Sans Mono", monospace;
