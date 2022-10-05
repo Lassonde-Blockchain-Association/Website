@@ -2,6 +2,7 @@
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
     "aos": "^3.0.0-beta.6",
+    "cacache": "^16.1.3",
     "express": "^4.18.1",
     "framer-motion": "^6.5.1",
     "gh-pages": "^4.0.0",
