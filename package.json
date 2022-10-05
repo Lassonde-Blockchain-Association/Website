@@ -12,5 +12,13 @@
     "react-vertical-timeline-component": "^3.5.2",
     "styled-components": "^5.3.5",
     "use-leaflet": "^1.6.1"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   }
 }
