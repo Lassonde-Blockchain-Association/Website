@@ -1,6 +1,7 @@
 import React from "react";
 import {
   ContactH1,
+  ContactH2,
   ContactWrap,
   Container,
   Text,
@@ -8,54 +9,32 @@ import {
   TextWrapper,
   Background,
   TextContainer,
-  Icon,
-  ContactNav,
-  NavBtn,
-  NavBtnLink,
-  Discordbutton,
-  Discord,
 } from "./ContactElements";
 
-import { FaMailBulk, FaGithub, FaPencilAlt, FaDiscord } from "react-icons/fa";
+import { FaMailBulk, FaGithub, FaPencilAlt } from "react-icons/fa";
 import videoBg from "../../video/bc2.mp4";
-import Navbar from "../Navbar";
 
 const Contact = () => {
   return (
     <>
       <Container>
-        {/* <ContactNav>
-          <Icon to="/">LBC</Icon>
-          <NavBtn>
-            <NavBtnLink to="/contact">Contact Us</NavBtnLink>
-
-            <Discordbutton href="https://discord.gg/JuCmutKUFM">
-              <Discord>
-                <FaDiscord />
-              </Discord>
-              Discord
-            </Discordbutton>
-          </NavBtn>
-        </ContactNav> */}
-
         <ContactWrap>
           <Background src={videoBg} autoPlay loop muted />
+
+          <ContactH1>Contact Us</ContactH1>
           <TextContainer>
             <TextWrapper>
-              <ContactH1>Contact us</ContactH1>
-              <ContactH1>General Inquiries</ContactH1>
+              <ContactH2>General Inquiries</ContactH2>
 
               <Text>
                 Lassonde Blockchain’s mission is to create a community of
                 blockchain innovators at York University. Feel free to reach out
                 to us by email below:
               </Text>
+            </TextWrapper>
 
-              <ContactLink href="mailto:lassondeblockchain@gmail.com">
-                <FaMailBulk /> lassondeblockchain@gmail.com
-              </ContactLink>
-
-              <ContactH1>Joining Our Club</ContactH1>
+            <TextWrapper>
+              <ContactH2>Joining Our Club</ContactH2>
 
               <Text>
                 Feel free to sign up to become a member via the Google Form
@@ -64,24 +43,36 @@ const Contact = () => {
                 stay up to date with us by joining our Discord server --
                 non-official members are also welcome!
               </Text>
+            </TextWrapper>
 
-              <ContactLink href="https://forms.gle/mA3g2T4SzV5JKrkbA">
-                <FaPencilAlt /> Member Sign Up
-              </ContactLink>
-
-              <ContactH1>For Code Geeks</ContactH1>
-
+            <TextWrapper>
+              <ContactH2>For Code Geeks</ContactH2>
               <Text>
                 If you would like take a backstage tour of our website, feel
                 free to browse its code on GitHub. It is built using React and
                 styled components.
               </Text>
+            </TextWrapper>
+
+            <TextWrapper>
+              <ContactLink href="mailto:lassondeblockchain@gmail.com">
+                <br></br>
+                <FaMailBulk /> lassondeblockchain@gmail.com
+              </ContactLink>
+            </TextWrapper>
+
+            <TextWrapper>
+              <ContactLink href="https://forms.gle/mA3g2T4SzV5JKrkbA">
+                <br></br>
+                <FaPencilAlt /> Member Sign Up
+              </ContactLink>
+            </TextWrapper>
+
+            <TextWrapper>
               <ContactLink href="https://github.com/Lassonde-Blockchain-Club">
+                <br></br>
                 <FaGithub /> Lassonde-Blockchain-Club
               </ContactLink>
-              {/* <ContactLink>
-                  <FaLinkedin /> Lassonde Blockchain Club
-                </ContactLink> */}
             </TextWrapper>
           </TextContainer>
         </ContactWrap>
