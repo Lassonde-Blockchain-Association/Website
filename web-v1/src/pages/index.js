@@ -6,7 +6,6 @@ import Roadmap from "../components/Roadmap";
 import TeamSection from "../components/TeamSection";
 import Footer from "../components/Footer";
 import Vision from "../components/Vision";
-// import { Router } from 'react-router-dom';
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +17,10 @@ const Main = () => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
+      <Navbar toggle={toggle} page={"contact"} />
       <Home />
       <Vision />
       <Roadmap />
-      {/* <TeamSection /> */}
       <Footer />
     </>
   );

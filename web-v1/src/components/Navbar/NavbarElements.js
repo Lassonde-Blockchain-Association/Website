@@ -70,16 +70,6 @@ export const MobileIcon = styled.div`
   }
 `;
 
-// export const Bars = styled(FaBoxes)`
-//   display: none;
-
-//   @media screen and (max-width: 960px) {
-//     display: block;
-//     position: absolute;
-//     transform: translate(-100%, 75%);
-//   }
-// `;
-
 export const NavMenu = styled.div`
   /* padding: 0 10% 0 10%;
   display: flex;
@@ -106,7 +96,6 @@ export const NavLink = styled(LinkS)`
   display: flex;
   text-decoration: none;
   padding: 0 1.2rem;
-  /* padding: */
   cursor: pointer;
 
   &:hover {

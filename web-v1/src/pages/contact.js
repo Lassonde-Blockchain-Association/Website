@@ -1,14 +1,18 @@
 import React from "react";
+import { useState } from "react";
 import Contact from "../components/Contact";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Home from "../components/Home";
 
 const ContactPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <>
-      <Navbar />
-      {/* <Home /> */}
+      <Navbar toggle={toggle} />
       <Contact />
       <Footer />
     </>

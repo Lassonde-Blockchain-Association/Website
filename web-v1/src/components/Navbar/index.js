@@ -1,6 +1,5 @@
 //rafce
 import React, { useState, useEffect } from "react";
-// import { HiBars3BottomRight } from "react-icons/hi2";
 import { FaBoxes, FaDiscord } from "react-icons/fa";
 import {
   Nav,
@@ -18,12 +17,10 @@ import {
 
 import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, page }) => {
   const [click, setClick] = useState(false);
-  // const [button, setButton] = useState(true);
   const [scrollNav, setScrollNav] = useState(false);
 
-  // const handleClick = () => setClick(!click);
   const updateNav = () => {
     console.log(window.scrollY);
     if (window.scrollY >= 70) {
@@ -55,18 +52,16 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLink
-                // to="home"
+                to="/"
                 smooth={true}
                 duration={500}
                 spy={true}
-                // exact="true"
-                // offset={-75}
-                to="/"
                 onClick={toggleHome}
               >
                 Home
               </NavLink>
             </NavItem>
+
             <NavItem>
               <NavLink
                 to="vision"
