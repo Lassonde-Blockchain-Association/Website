@@ -30,7 +30,13 @@ const Contact = () => {
                 Lassonde Blockchain’s mission is to create a community of
                 blockchain innovators at York University. Feel free to reach out
                 to us by email below:
+                <br></br>
               </Text>
+
+              <ContactLink href="mailto:lassondeblockchain@gmail.com">
+                <br></br>
+                <FaMailBulk /> lassondeblockchain@gmail.com
+              </ContactLink>
             </TextWrapper>
 
             <TextWrapper>
@@ -42,7 +48,12 @@ const Contact = () => {
                 will help us make the most of our journey together. You can also
                 stay up to date with us by joining our Discord server --
                 non-official members are also welcome!
+                <br></br>
               </Text>
+              <ContactLink href="https://forms.gle/mA3g2T4SzV5JKrkbA">
+                <br></br>
+                <FaPencilAlt /> Member Sign Up
+              </ContactLink>
             </TextWrapper>
 
             <TextWrapper>
@@ -51,24 +62,8 @@ const Contact = () => {
                 If you would like take a backstage tour of our website, feel
                 free to browse its code on GitHub. It is built using React and
                 styled components.
+                <br></br>
               </Text>
-            </TextWrapper>
-
-            <TextWrapper>
-              <ContactLink href="mailto:lassondeblockchain@gmail.com">
-                <br></br>
-                <FaMailBulk /> lassondeblockchain@gmail.com
-              </ContactLink>
-            </TextWrapper>
-
-            <TextWrapper>
-              <ContactLink href="https://forms.gle/mA3g2T4SzV5JKrkbA">
-                <br></br>
-                <FaPencilAlt /> Member Sign Up
-              </ContactLink>
-            </TextWrapper>
-
-            <TextWrapper>
               <ContactLink href="https://github.com/Lassonde-Blockchain-Club">
                 <br></br>
                 <FaGithub /> Lassonde-Blockchain-Club

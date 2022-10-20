@@ -7,19 +7,22 @@ import "aos/dist/aos.css";
 export const Container = styled.div`
   font-family: "Spline Sans Mono", monospace;
   width: 100%;
-  min-height: 692px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  height: 100%
+  display: flex;
+  margin-top: -60px;
+  z-index: 0;
+  background-color: black;
+  @media screen and (max-width: 1500px) {
+    height: 100%;
+  }
 `;
 
 export const Background = styled.video`
+  position: absolute;
   width: 100%;
-  height: 100vh;
-  margin-top: -60px;
+  height: 100%;
   z-index: 0;
+  margin-top: 60px;
   background-size: cover;
   background-color: black;
   filter: brightness(50%);
@@ -31,12 +34,19 @@ export const ContactWrap = styled.div`
 `;
 
 export const TextContainer = styled.div`
-  position: absolute;
   content-justify: center;
   grid-template-columns: 1fr 1fr 1fr;
   flex-direction: column;
   display: grid;
-  margin: 15%;
+  padding: 0% 10% 10% 10%;
+  z-index: 1;
+  @media screen and (max-width: 1500px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+    padding: 0% 10% 10% 10%;
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -54,8 +64,8 @@ export const ContactH2 = styled.h2`
 `;
 
 export const ContactH1 = styled.h1`
-  position: absolute;
-  padding: 10% 10%;
+  padding: 10% 0% 0% 10%;
+  z-index: 0;
   color: white;
 `;
 
