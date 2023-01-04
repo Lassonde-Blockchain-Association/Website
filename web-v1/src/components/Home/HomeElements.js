@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
 `;
 
 export const Background = styled.video`
+  /* background-image: url(../../video/bc2.gif); */
   width: 100%;
   height: 100vh;
   margin-top: -60px;
@@ -25,6 +26,7 @@ export const MapBox = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
 `;
 
 export const MapH1 = styled.h1``;

@@ -8,7 +8,7 @@ const Home = () => {
       <HomeContainer id="home">
         <Background src={videoBg} autoPlay loop muted />
         <MapBox>
-          <MapH1>Lassonde Blockchain</MapH1>
+          <MapH1>Lassonde Blockchain Association</MapH1>
           <MapP>
             A student community dedicate to share and learn our newest tech in
             blockchain, web3.0, metaverse, and more.

@@ -5,7 +5,7 @@ let info = [
     location: "()",
     description: "Putting our first step on blockchain.",
     buttonText: "()",
-    date: "JUNE - 2022",
+    date: "Q2 - 2022",
     icon: "school",
   },
   {
@@ -14,7 +14,7 @@ let info = [
     location: "()",
     description: "Introducing our offical Lassonde Blockchain Website",
     buttonText: "()",
-    date: "Aug - 2022",
+    date: "Q4  - 2022",
     icon: "school",
   },
   {
@@ -24,7 +24,7 @@ let info = [
     description:
       "Exploring. Test. Understand. the relationship between data and blockchain world",
     buttonText: "()",
-    date: "Winter - 2022",
+    date: "Q1 - 2023",
     icon: "work",
   },
 
@@ -34,7 +34,7 @@ let info = [
     location: "()",
     description: "Coming Soon.",
     buttonText: "()",
-    date: "Q1 - 2023",
+    date: "Q2 - 2023",
     icon: "work",
   },
   {
@@ -43,7 +43,7 @@ let info = [
     location: "()",
     description: "Coming Soon.",
     buttonText: "()",
-    date: "Q1 - 2023",
+    date: "Q3 - 2023",
     icon: "school",
   },
   {

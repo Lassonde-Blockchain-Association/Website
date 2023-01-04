@@ -27,7 +27,7 @@ const Roadmap = () => {
     <>
       <RoadmapSection>
         <TimelineH1 id="timeline">ROADMAP ACTIVATIONS</TimelineH1>
-        <TimelineH3>A University Story built for our own.</TimelineH3>
+        <TimelineH3>A New Story built for our own.</TimelineH3>
         <RoadmapContainer>
           {/* <Background src={img} /> */}
 
