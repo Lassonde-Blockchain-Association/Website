@@ -29,7 +29,7 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo to="/" onClick={toggleHome}>
-                LBC
+                LBA
               </SocialLogo>
 
               <WebsiteRights>

@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 export const Container = styled.div`
   font-family: "Spline Sans Mono", monospace;
   width: 100%;
-  height: 100%
+  height: 100%;
   display: flex;
   margin-top: -60px;
   z-index: 0;
