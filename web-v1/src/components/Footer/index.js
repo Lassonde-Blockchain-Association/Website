@@ -45,7 +45,7 @@ const Footer = () => {
                   <FaMailBulk />
                 </SocialIconLink>
                 <SocialIconLink
-                  href="https://www.linkedin.com/school/lassonde-school-of-engineering-york-university/"
+                  href="https://www.linkedin.com/company/lassonde-blockchain-association/"
                   target=""
                   aria-label="LinkedIn"
                 >

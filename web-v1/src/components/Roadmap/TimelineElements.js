@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const RoadmapSection = styled.div`
   font-family: "Spline Sans Mono", monospace;
   height: 100%;
-  background: DarkGray;
+  background: #e69a66;
   position: relative;
   padding: 5%;
 `;

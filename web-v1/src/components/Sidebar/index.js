@@ -12,13 +12,17 @@ import {
   SidebarRoute,
   DiscordButton,
   DiscordIcon,
+  Image,
 } from "./SidebarElements";
+
+import marker from "../../images/marker.gif";
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon />
+        {/* <CloseIcon /> */}
+        <Image src={marker} />
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
@@ -34,7 +38,9 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
 
         <SideBtnWrap>
-          <SidebarRoute to="/contact">Contact us</SidebarRoute>
+          <SidebarRoute to="contact" onClick={toggle} offset={-74}>
+            Contact us
+          </SidebarRoute>
         </SideBtnWrap>
         <SideBtnWrap>
           <DiscordButton href="https://discord.gg/JuCmutKUFM">

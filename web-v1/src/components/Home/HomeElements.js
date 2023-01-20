@@ -12,7 +12,7 @@ export const Background = styled.video`
   z-index: 0;
   background-size: cover;
   background-color: black;
-  filter: brightness(60%);
+  filter: brightness(90%);
   background-position: center top;
 `;
 

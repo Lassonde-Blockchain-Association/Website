@@ -6,6 +6,7 @@ import Roadmap from "../components/Roadmap";
 import TeamSection from "../components/TeamSection";
 import Footer from "../components/Footer";
 import Vision from "../components/Vision";
+import Contact from "../components/Contact";
 
 const Main = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,10 +18,11 @@ const Main = () => {
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} page={"contact"} />
+      <Navbar toggle={toggle} />
       <Home />
       <Vision />
       <Roadmap />
+      <Contact />
       <Footer />
     </>
   );

@@ -30,14 +30,19 @@ export const CloseIcon = styled(FaRegWindowClose)`
 
 export const Icon = styled.div`
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 0;
+  right: 0.5rem;
   // right: 0;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;
   outline: none;
 `;
+
+export const Image = styled.img`
+  width: 120px;
+`;
+
 export const SidebarWrapper = styled.div`
   color: #fff;
 `;
@@ -77,7 +82,7 @@ export const SideBtnWrap = styled.div`
   margin-left: 20px;
 `;
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled(LinkS)`
   /* margin: auto; */
   border-radius: 10px;
   background: white;

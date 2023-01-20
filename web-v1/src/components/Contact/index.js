@@ -1,75 +1,61 @@
 import React from "react";
 import {
   ContactH1,
-  ContactH2,
   ContactWrap,
   Container,
-  Text,
-  ContactLink,
-  TextWrapper,
-  Background,
   TextContainer,
+  Image,
+  ContactLeft,
+  ContactRight,
+  SocialIconLink,
 } from "./ContactElements";
+import test from "../../images/test.gif";
 
-import { FaMailBulk, FaGithub, FaPencilAlt } from "react-icons/fa";
-import videoBg from "../../video/bc2.mp4";
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaLink,
+  FaTiktok,
+  FaTwitter,
+} from "react-icons/fa";
 
 const Contact = () => {
   return (
     <>
-      <Container>
+      <Container id="contact">
+        <ContactH1>CONTACT US</ContactH1>
+
         <ContactWrap>
-          <Background src={videoBg} autoPlay loop muted />
+          {/* <ContactContainer> */}
+          <ContactLeft>
+            <Image src={test} />
+          </ContactLeft>
 
-          <ContactH1>Contact Us</ContactH1>
-          <TextContainer>
-            <TextWrapper>
-              <ContactH2>General Inquiries</ContactH2>
+          <ContactRight>
+            <TextContainer>
+              Lassonde Blockchain Assoication would love to hear and connect
+              with you. Learn mroe about us!
+              <br />
+              <br />
+              Our Office Hour is coming soon!!
+            </TextContainer>
 
-              <Text>
-                Lassonde Blockchain’s mission is to create a community of
-                blockchain innovators at York University. Feel free to reach out
-                to us by email below:
-                <br></br>
-              </Text>
-
-              <ContactLink href="mailto:lassondeblockchain@gmail.com">
-                <br></br>
-                <FaMailBulk /> lassondeblockchain@gmail.com
-              </ContactLink>
-            </TextWrapper>
-
-            <TextWrapper>
-              <ContactH2>Joining Our Club</ContactH2>
-
-              <Text>
-                Feel free to sign up to become a member via the Google Form
-                below! It takes only 3 minutes to fill out and the information
-                will help us make the most of our journey together. You can also
-                stay up to date with us by joining our Discord server --
-                non-official members are also welcome!
-                <br></br>
-              </Text>
-              <ContactLink href="https://forms.gle/mA3g2T4SzV5JKrkbA">
-                <br></br>
-                <FaPencilAlt /> Member Sign Up
-              </ContactLink>
-            </TextWrapper>
-
-            <TextWrapper>
-              <ContactH2>For Code Geeks</ContactH2>
-              <Text>
-                If you would like take a backstage tour of our website, feel
-                free to browse its code on GitHub. It is built using React and
-                styled components.
-                <br></br>
-              </Text>
-              <ContactLink href="https://github.com/Lassonde-Blockchain-Club">
-                <br></br>
-                <FaGithub /> Lassonde-Blockchain-Club
-              </ContactLink>
-            </TextWrapper>
-          </TextContainer>
+            <SocialIconLink href="https://www.linkedin.com/company/lassonde-blockchain-association/">
+              <FaLinkedinIn />
+            </SocialIconLink>
+            <SocialIconLink href="https://www.instagram.com/lassondeblockchain/">
+              <FaInstagram />
+            </SocialIconLink>
+            <SocialIconLink href="https://twitter.com/lassondeLBA/">
+              <FaTwitter />
+            </SocialIconLink>
+            <SocialIconLink href="https://www.tiktok.com/@lassondeblockchain/">
+              <FaTiktok />
+            </SocialIconLink>
+            <SocialIconLink href="https://linktr.ee/lassondeblockchain/">
+              <FaLink />
+            </SocialIconLink>
+          </ContactRight>
         </ContactWrap>
       </Container>
     </>

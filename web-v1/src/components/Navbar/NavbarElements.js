@@ -57,17 +57,20 @@ export const MobileIcon = styled.div`
     display: block;
     /* rotate: 180deg; */
     position: absolute;
-    height: 80px;
-    right: 0px;
+    height: 10px;
+    right: -120px;
     /* height: ${({ scrollNav }) => (scrollNav ? "50px" : "75px")}; */
     // top: ${({ scrollNav }) => (scrollNav ? "1rem" : "1.2rem")};
     // right: 1.5rem;
 
     transform: translate(-100%, 60%);
-    font-size: 30px;
+    /* font-size: 40px; */
     cursor: pointer;
     color: #fff;
   }
+`;
+export const Image = styled.img`
+  width: 120px;
 `;
 
 export const NavMenu = styled.div`
@@ -111,7 +114,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(Link)`
+export const NavBtnLink = styled(LinkS)`
   border-radius: 10px;
   background: #ffffff;
   margin-left: 10px;

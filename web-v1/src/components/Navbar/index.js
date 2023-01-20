@@ -13,9 +13,11 @@ import {
   MobileIcon,
   NavItem,
   Discord,
+  Image,
 } from "./NavbarElements";
 
 import { animateScroll as scroll } from "react-scroll";
+import marker from "../../images/marker.gif";
 
 const Navbar = ({ toggle, page }) => {
   const [click, setClick] = useState(false);
@@ -46,7 +48,8 @@ const Navbar = ({ toggle, page }) => {
           </NavLogo>
 
           <MobileIcon onClick={toggle}>
-            <FaBoxes />
+            {/* <FaBoxes /> */}
+            <Image src={marker} />
           </MobileIcon>
 
           <NavMenu>
@@ -104,9 +107,18 @@ const Navbar = ({ toggle, page }) => {
           </NavMenu>
 
           <NavBtn>
-            <NavBtnLink to="/contact">Contact Us</NavBtnLink>
+            <NavBtnLink
+              to="contact"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={5}
+            >
+              Contact Us
+            </NavBtnLink>
 
-            <Discordbutton href="https://discord.gg/JuCmutKUFM">
+            <Discordbutton href="https://discord.gg/FHtcj7sFkv">
               <Discord>
                 <FaDiscord />
               </Discord>

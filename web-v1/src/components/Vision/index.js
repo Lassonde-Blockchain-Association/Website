@@ -23,7 +23,7 @@ const Vision = () => {
     <>
       <VisionSection>
         <VisionContainer id="vision">
-          <VisionH1>VISION</VisionH1>
+          <VisionH1>OUR VISION</VisionH1>
           <VisionStatement>
             We want to help make the world of Web3 more accessible to everyone.
             <br></br>

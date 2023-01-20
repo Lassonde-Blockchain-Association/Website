@@ -20,7 +20,7 @@ import "react-vertical-timeline-component/style.min.css";
 import img from "../../images/LBC.png";
 
 const Roadmap = () => {
-  let workIconStyles = { background: "#025c99" };
+  let workIconStyles = { background: "#6f92cd" };
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (

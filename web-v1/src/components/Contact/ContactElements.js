@@ -6,74 +6,65 @@ import "aos/dist/aos.css";
 
 export const Container = styled.div`
   font-family: "Spline Sans Mono", monospace;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  margin-top: -60px;
-  z-index: 0;
-  background-color: black;
-  @media screen and (max-width: 1500px) {
-    height: 100%;
-  }
+  height: 80vh;
+  padding: 5%;
+  margin-top: -5px;
+  background-color: #4e3e67;
 `;
-
-export const Background = styled.video`
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  margin-top: 60px;
-  background-size: cover;
-  background-color: black;
-  filter: brightness(50%);
+export const Image = styled.img`
+  width: 40vh;
+  @media screen and (max-width: 960px) {
+    width: 35vh;
+  }
+  @media screen and (max-width: 480px) {
+    width: 25vh;
+  }
 `;
 
 export const ContactWrap = styled.div`
-  height: 100%;
-  display: grid;
-`;
-
-export const TextContainer = styled.div`
-  content-justify: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  flex-direction: column;
-  display: grid;
-  padding: 0% 10% 10% 10%;
-  z-index: 1;
-  @media screen and (max-width: 1500px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media screen and (max-width: 960px) {
-    grid-template-columns: 1fr;
-    padding: 0% 10% 10% 10%;
-  }
-`;
-
-export const TextWrapper = styled.div`
+  position: absolute;
+  padding: 15%;
+  justify-content: center;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
   color: white;
-  text-decoration: none;
+  text-align: center;
 
-  padding: 10px;
   @media screen and (max-width: 480px) {
-    padding-bottom: 0;
+    flex-direction: column;
   }
-`;
-
-export const ContactH2 = styled.h2`
-  font-weight: 700;
 `;
 
 export const ContactH1 = styled.h1`
-  padding: 10% 0% 0% 10%;
-  z-index: 0;
+  padding-left: 8%;
   color: white;
 `;
-
-export const ContactLink = styled.a`
-  font-size: 14px;
-  text-decoration: none;
+export const ContactLeft = styled.div`
+  float: left;
+`;
+export const ContactRight = styled.div`
+  padding-top: 120px;
+  float: right;
+  @media screen and (max-width: 480px) {
+    padding-top: 60px;
+  }
 `;
 
-export const Text = styled.span`
-  font-size: 18px;
+export const TextContainer = styled.div`
+  margin-bottom: 50px;
+`;
+
+export const SocialIconLink = styled.a`
+  margin: 25px;
+  color: #fff;
+  font-size: 35px;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #e69a66;
+  }
+  @media screen and (max-width: 960px) {
+    margin: 5px;
+  }
 `;

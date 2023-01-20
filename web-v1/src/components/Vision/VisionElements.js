@@ -6,7 +6,7 @@ export const VisionSection = styled.div`
   display: flex;
   padding: 5%;
   flex-direction: column;
-  background-color: #182033;
+  background-color: #00345a;
   margin-top: -5px;
 
   @media screen and (max-width: 1500px) {
@@ -45,7 +45,7 @@ export const CardContainer = styled.div`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     transform: scale(1.1);
-    background-color: #6f92cd;
+    /* background-color: #6f92cd; */
   }
 `;
 
