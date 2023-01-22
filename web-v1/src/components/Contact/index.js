@@ -34,7 +34,7 @@ const Contact = () => {
           <ContactRight>
             <TextContainer>
               Lassonde Blockchain Assoication would love to hear and connect
-              with you. Learn mroe about us!
+              with you. Learn more about us!
               <br />
               <br />
               Our Office Hour is coming soon!!
